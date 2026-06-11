@@ -15,7 +15,7 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Truong Gia Hao
 
-&emsp; **Phone Number:** 0898759914 
+&emsp; **Phone Number:**  0898759914 
 
 &emsp; **Email:** truonggiahao24@gmail.com
 

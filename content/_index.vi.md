@@ -9,7 +9,7 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Trương Gia Hào
 
-&emsp; **Số điện thoại:** 0898759914
+&emsp; **Số điện thoại:**  0898759914
 
 &emsp; **Email:** truonggiahao24@gmail.com
 
