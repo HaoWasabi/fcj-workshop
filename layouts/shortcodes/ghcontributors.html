@@ -20,10 +20,7 @@
 </style>
 <div class="ghContributors">
   {{ $url := .Get 0 }}
-  {{ with try (resources.GetRemote $url) }}
-    {{ with .Err }}
-      {{ warnf "ghcontributors shortcode failed to fetch %q: %s" $url . }}
-    {{ else with .Value }}
+  {{ with resources.GetRemote $url }}
       {{ $contributors := .Content | transform.Unmarshal }}
       {{ range $contributors }}
   <div>
@@ -43,8 +40,7 @@
     <span class="contributions">{{.contributions}} commits</span>
   </div>
       {{ end }}
-    {{ else }}
-      {{ warnf "ghcontributors shortcode could not load remote resource %q" $url }}
-    {{ end }}
+  {{ else }}
+    {{ warnf "ghcontributors shortcode could not load remote resource %q" $url }}
   {{ end }}
 </div>
