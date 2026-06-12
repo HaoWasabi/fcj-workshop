@@ -4,14 +4,8 @@ date: 2024-01-01
 weight: 1
 chapter: false
 ---
-
     
 # Internship Report
-
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
 ### Student Information:
 &emsp; **Full Name:** Truong Gia Hao
 
@@ -31,7 +25,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 24/06/2026 to 12/08/2026
 
-![Hao's profile picture](/images/avatar.png)
+![Hao's profile picture](/images/giahao_avatar.png)
 
 ### Report Content
 
