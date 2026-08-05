@@ -1,12 +1,12 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-06-27
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “FCAJ Community Day June 2026 - Data driven, AI risen”
 
 ### Event Objectives
 
@@ -17,106 +17,115 @@ pre: " <b> 4.2. </b> "
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+* **Truong Tran** – AI Solution Sales at Noventiq
+* **Steve Tran** – CTO / Founder at CloudThinker
+* **Trung Vu** – CEO at Revve AI
+* **Anh Dang** – Solution Sales at Noventiq
+* **Nghi Danh** – AI Engineer at Renova Cloud
+* **Kiet Tran** – AI Engineer at AWS Student Builder Group
+* **Bao Phan** – Cloud Engineer at CloudKinetics
+* **Nguyen Nguyen** – Cloud Engineer at CloudKinetics
+* **Toan Nguyen** – AWS Security Builder
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Deep Response Engine: From Detection to Autonomous Resolution
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- ​The complexity wall in modern cloud operations
+- Shift from alert-driven to action-driven systems
+- ​Deep Response Engine architecture overview
+- ​Live demo of autonomous incident response
+- ​Business impact: cost reduction and zero-downtime operations
 
-#### Transitioning to modern application architecture – Microservices
+#### Voice Agents: Building Human-Like AI Conversations at Scale
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- ​Evolution from IVR and chatbots to AI voice agents
+- ​Key challenges: latency, accuracy, and natural interaction
+- ​Amazon Nova Sonic and speech-to-speech foundation model
+- ​Architecture: telephony, streaming, Bedrock, MCP tools
+- ​Enterprise use cases, best practices, and live demo
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### AWS DevOps Agent: Your Always-Available Operations Teammate
 
-#### Domain-Driven Design (DDD)
+- ​Overview of AWS DevOps Agent
+- ​Reducing MTTD and MTTR with AI-driven operations
+- ​Supporting multi-cloud and hybrid environments
+- ​Bedrock AgentCore and multi-agent reasoning approach
+- ​Real-world use cases and ECS demo walkthrough
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### AI-Powered Productivity: Workforce Planning For Enterprise
 
-#### Event-Driven Architecture
+- ​HR transformation challenges in modern enterprises
+- ​Overview of Amazon Quick and its HR capabilities
+- ​Accelerating HR operations with automation
+- ​Workforce analytics and data-driven insights
+- ​Strategic workforce planning for enterprise decision-making
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Building Secure Private MCP Connection with Amazon Quick
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- ​Introduction to Amazon Quick as an AI assistant platform
+- ​MCP (Model Context Protocol) and its role in extensibility
+- ​Security challenges in MCP-based integrations
+- ​Configuring Amazon Quick VPC private connectivity
+- ​Demo and real-world implementation insights
 
 ### Key Takeaways
 
-#### Design Mindset
+- **The Impact of AI on Cloud Engineering**: Understanding the development trends of AI and automation tools in the industry, while recognizing the limitations of AI in its inability to completely replace human thinking and strategic decision-making in complex infrastructures.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- **Solving the Complexity Problem**: Grasping how new technology solutions help manage and reduce system complexity as businesses scale.
 
-#### Technical Architecture
+- **FinOps and Cloud Cost Optimization**: Understanding how to apply AI to analyze AWS resource billing, optimizing operational and financial costs in the cloud effectively.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- **Security and Vulnerability Testing**: Gaining knowledge about building security testing systems (penetration testing), controlling infrastructure coding, and managing secure credentials.
 
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- **Estimating Real Infrastructure Costs**: Understand the cost components when deploying a large-scale system, including costs for network components (such as ALB, Round 53 Resolver) and security (AWS Secret Manager).
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Applying AI to FinOps**: Utilizing tools and solutions to support analysis and optimize AWS infrastructure costs in real-world enterprise projects.
+
+- **Enhancing Complex System Management Capabilities**: Applying methodologies to control large-scale cloud environments, optimize resources, and minimize manual operational burdens.
+
+- **Strengthening Security Control**: Implementing more rigorous vulnerability assessment processes and infrastructure configuration control.
+
+- **Improving Resource Planning Skills**: Building more accurate cost estimates for cloud infrastructure deployment projects based on real-world specifications.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in the **“Community Day June 2026”** workshop was a very rewarding experience, giving me a comprehensive view of how to modernize applications using modern AI methods and tools. Some highlights include:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from highly qualified speakers
+- Speakers from AWS and major technology organizations shared **best practices** in modern application design.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Through real-world case studies, I gained a better understanding of the impact of AI and automation tools on **Cloud Engineering** and their limitations in relation to human thinking.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Practical engineering experience
+- Learning solutions for solving complex system problems as businesses scale.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Understanding how to apply AI to **FinOps** to analyze resource billing and optimize operating costs on the Cloud.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- Gain a thorough understanding of security testing (penetration testing) and secure credential management within the system.
+
+#### Applying Modern Tools
+- Directly learn about AI solutions and tools that support automation in cloud infrastructure and operations management.
+
+- Learn how to apply AI to FinOps to analyze invoices, optimize AWS resource costs, and improve operational performance.
+
+#### Networking and Exchange
+- The event provided opportunities to network with the AWS technology community and engage in direct, highly interactive Q&A sessions with experts.
+
+- Through practical sharing, I realized the importance of closely integrating technical infrastructure solutions with the operational goals of the business, rather than focusing solely on technology.
+
+#### Lessons Learned
+- AI is a powerful tool for optimizing costs (FinOps) and supporting operations, but it cannot completely replace the strategic decision-making role of humans.
+
+- Managing cloud infrastructure requires a deep understanding of network architecture, security, and tight cost control.
+
+- A proactive approach is needed to cope with the increasing complexity of the system as the business grows.
 
 #### Some event photos
-*Add your event photos here*  
+![Event Photo 1](images/photo_01.jpg)
+![Event Photo 2](images/photo_02.png)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

@@ -1,28 +1,48 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-08-02
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# KIRO POWERS
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+While "vibe coding", developers and engineering teams have likely run into a few recurring bottlenecks:
 
-Key points to know:
+* Spending time reconfiguring every new project from scratch.
+* Struggling to sync setups across the team, leading to inconsistent code.
+* Loading all tools simultaneously, causing context bloat that wastes tokens and reduces AI focus.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+That’s why Kiro Powers was created to solve this exact friction. Instead of manual setup for every new project, we can package all tools, instructions, and automations into a single, shareable unit for the entire team. Install it once, and everyone shares the exact same setup.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+A Power consists of four core components:
 
-...Image...
+* POWER.md file: Contains documentation and trigger keywords.
+* MCP servers: Provide executable tools.
+* Steering files: Define workflows and coding standards.
+* Hooks: Enable event-driven automation.
 
-...Link...
+The game-changer? A Power **does not load by default**. It is only triggered when your prompt contains matching keywords. This ensures the agent receives only the exact knowledge and tools it needs, completely eliminating context bloat.
 
-...Guide...
+Anyone can build their own Power using the Build a Power tool, or import one from GitHub or a local directory via Add Custom Power. Once polished, just push it to a Git repo for seamless team-wide synchronization.
+
+**Quick Example**: Install the "Zapier" Power in the Kiro Powers panel, and your agent instantly gains the ability to connect and automate thousands of external apps.
+
+This Power contains a POWER.md with keywords like "zapier", "automation", "webhook", "youtube", and "discord", bundled with the Zapier MCP and steering files guiding data integration workflows. Simply chat: "Automatically fetch the latest video from YouTube channel Y and send it via X..." or paste a Zapier scenario link. The Power triggers automatically, grabbing context, mapping data, generating notification structures, and handling the execution without manual coding.
+
+Kiro Powers is more than just a utility - it's a way to turn domain expertise into reusable, shareable modules.
+
+References:
+<br>[1]: https://kiro.dev/docs/powers/
+<br>[2]: https://kiro.dev/blog/introducing-powers/
+<br>[3]: https://youtu.be/kEOmuVyqfMU?si=p9iFGMNMUK9rbYAp
+
+Ho Chi Minh City, August 02, 2026 <br>
+Truong Gia Hao
+
+![Kiro Powers Screen](/images/kiro-powers_screen.png)
+
+[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2232309990867294/)
+
+[Blog link at LinkedIn](https://www.linkedin.com/posts/haowasabi_aws-kiro-aiengineering-share-7489676171027165186-lzvw/)

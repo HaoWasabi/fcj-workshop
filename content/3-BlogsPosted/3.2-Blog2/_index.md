@@ -1,28 +1,54 @@
 ---
 title: "Blog 2"
-date: 2024-01-01
-weight: 1
+date: 2026-07-31
+weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# AMAZON RDS AUTOMATION ON SCHEDULE
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Hi everyone, I'm researching how to optimize costs on AWS and came across a tutorial on **"Automatically stop and start an Amazon RDS DB instance using AWS Systems Manager Maintenance Windows"** in AWS Prescriptive Guidance.
 
-Key points to know:
+The article shares how to **automatically turn Amazon RDS on and off** according to a schedule, for example, only starting the database during working hours and turning it off in the evening or on weekends. This method is quite suitable for development, testing, or staging environments that don't need to operate 24/7.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+Initially, I thought I would have to use EventBridge in combination with Lambda and write my own code to call the RDS API. However, AWS Systems Manager already has two built-in Automation runbooks, `AWS-StartRdsInstance` and `AWS-StopRdsInstance`, so almost no additional logic is needed.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+Key points to remember:
 
-...Image...
+* Create two Maintenance Windows for the start and stop schedules.
 
-...Link...
+* Use cron expressions to define the run times.
 
-...Guide...
+* Assign tags to the RDS instances that need to be affected.
+
+* Group the instances into Resource Groups.
+
+* Use an Automation runbook to automatically start or stop the database.
+
+The best part is that when there are many RDS instances, I only need to assign the same tag to them instead of manually configuring each database. The Systems Manager will perform the task on all resources in the group.
+
+Some takeaways:
+
+* Not all resources need to run 24/7, especially in development and test environments.
+
+* Before writing Lambda for automation, check if AWS already has a suitable runbook.
+
+* The IAM role should only be granted permission to start and stop the necessary RDS instances.
+
+* RDS can only be stopped continuously for a maximum of 7 days, after which AWS will automatically restart for maintenance.
+
+My project currently keeps the database running continuously and only shuts it down when not in use, so this article has shown me a fairly simple way to optimize costs without building too many additional components.
+
+Thank you for reading my sharing.
+
+I'm still learning, so if there's anything I don't understand, please feel free to provide feedback.
+
+Link to the reference article: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-stop-and-start-an-amazon-rds-db-instance-using-aws-systems-manager-maintenance-windows.html
+
+Ho Chi Minh City, July 31, 2026 <br>
+Diep Thuy An
+
+![Illustrative Image](/images/blog2.png)
+
+[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2230171591081134/)

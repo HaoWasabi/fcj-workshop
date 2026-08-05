@@ -1,121 +1,119 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-06-27
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “FCAJ Community Day June 2026 - Data driven, AI risen”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Những góc nhìn mới về làn sóng AI đang định hình tương lai doanh nghiệp
+    - AI Agents
+    - Voice AI
+    - DevOps Automation 
+    - Bảo mật trong MCP 
+    - Các ứng dụng thực tiễn trên AWS
+- Sự kiện sẽ mang đến các phiên chia sẻ chuyên sâu cùng những phần demo trực tiếp đầy thực tiễn.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+* **Truong Tran** – AI Solution Sales tại Noventiq
+* **Steve Tran** – CTO / Founder tại CloudThinker
+* **Trung Vu** – CEO tại Revve AI
+* **Anh Dang** – Solution Sales tại Noventiq
+* **Nghi Danh** – AI Engineer tại Renova Cloud
+* **Kiet Tran** – AI Engineer tại AWS Student Builder Group
+* **Bao Phan** – Cloud Engineer tại CloudKinetics
+* **Nguyen Nguyen** – Cloud Engineer tại CloudKinetics
+* **Toan Nguyen** – AWS Security Builder
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Công nghệ phản hồi chuyên sâu: Từ phát hiện đến giải quyết tự động
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- ​Rào cản về độ phức tạp trong vận hành đám mây hiện đại
+- Chuyển đổi từ hệ thống dựa trên cảnh báo sang hệ thống dựa trên hành động
+- ​Tổng quan về kiến ​​trúc của Deep Response Engine
+- ​Trình diễn trực tiếp về phản hồi sự cố tự động
+- ​Tác động đến doanh nghiệp: giảm chi phí và vận hành không gián đoạn
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Voice Agents: Xây dựng các cuộc hội thoại AI giống con người ở quy mô lớn
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Sự tiến hóa từ IVR và chatbot đến các tác nhân giọng nói AI
+- Những thách thức chính: độ trễ, độ chính xác và tương tác tự nhiên
+- Mô hình nền tảng Amazon Nova Sonic và chuyển đổi giọng nói thành giọng nói
+- Kiến trúc: điện thoại, truyền phát, Bedrock, công cụ MCP
+- Các trường hợp sử dụng trong doanh nghiệp, các phương pháp hay nhất và bản demo trực tiếp
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### AWS DevOps Agent: Người đồng đội luôn sẵn sàng hỗ trợ bạn trong quá trình vận hành
+- Tổng quan về AWS DevOps Agent
+- Giảm MTTD và MTTR với các hoạt động dựa trên AI
+- Hỗ trợ môi trường đa đám mây và lai
+- Nền tảng AgentCore và phương pháp suy luận đa tác nhân
+- Các trường hợp sử dụng thực tế và hướng dẫn demo ECS
 
-#### Domain-Driven Design (DDD)
+#### Năng suất được hỗ trợ bởi AI: Lập kế hoạch nguồn nhân lực cho doanh nghiệp
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- Những thách thức chuyển đổi nhân sự trong các doanh nghiệp hiện đại
+- Tổng quan về Amazon Quick và các khả năng quản lý nhân sự của nó
+- Tăng tốc hoạt động nhân sự bằng tự động hóa
+- Phân tích lực lượng lao động và những hiểu biết dựa trên dữ liệu
+- Lập kế hoạch chiến lược về lực lượng lao động cho việc ra quyết định trong doanh nghiệp
 
-#### Event-Driven Architecture
+#### Xây dựng kết nối MCP riêng tư an toàn với Amazon Quick
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Giới thiệu về Amazon Quick như một nền tảng trợ lý AI
+- Giao thức MCP (Model Context Protocol) và vai trò của nó trong khả năng mở rộng
+- Những thách thức về bảo mật trong các tích hợp dựa trên MCP
+- Cấu hình kết nối riêng tư Amazon Quick VPC
+- Bản demo và những hiểu biết từ việc triển khai thực tế
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- **Tác động của AI đối với Cloud Engineering**: Hiểu rõ xu hướng phát triển của các công cụ AI và tự động hóa trong ngành, đồng thời nhận thức được giới hạn của AI khi không thể thay thế hoàn toàn tư duy và quyết định chiến lược của con người trong các hạ tầng phức tạp.
+- **Giải quyết bài toán Complexity**: Nắm bắt cách các giải pháp công nghệ mới giúp quản lý và giảm thiểu độ phức tạp hệ thống khi doanh nghiệp mở rộng quy mô.
+- **FinOps và Tối ưu chi phí đám mây**: Hiểu cách ứng dụng AI để phân tích hóa đơn tài nguyên AWS, tối ưu hóa chi phí vận hành và tài chính trên Cloud một cách hiệu quả.
+- **Bảo mật và Kiểm tra lỗ hổng**: Tiếp thu kiến thức về việc xây dựng hệ thống kiểm tra bảo mật (penetration testing), kiểm soát infrastructure coding và quản lý thông tin xác thực an toàn.
+- **Ước tính chi phí hạ tầng thực tế**: Nắm vững các yếu tố cấu thành chi phí khi triển khai hệ thống quy mô lớn, bao gồm chi phí cho các thành phần mạng (như ALB, Round 53 Resolver) và bảo mật (AWS Secret Manager).
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Ứng dụng AI vào FinOps**: Sử dụng các công cụ và giải pháp hỗ trợ phân tích, tối ưu chi phí hạ tầng AWS trong các dự án thực tế tại doanh nghiệp.
+- **Nâng cao năng lực quản lý hệ thống phức tạp**: Áp dụng các phương pháp luận để kiểm soát môi trường cloud quy mô lớn, tối ưu hóa tài nguyên và giảm thiểu áp lực vận hành thủ công.
+- **Tăng cường kiểm soát bảo mật**: Triển khai các quy trình đánh giá lỗ hổng bảo mật và kiểm soát cấu hình hạ tầng chặt chẽ hơn.
+- **Cải thiện kỹ năng lập kế hoạch tài nguyên**: Xây dựng bảng ước tính chi phí (cost estimate) chính xác hơn cho các dự án triển khai hạ tầng đám mây dựa trên các thông số kỹ thuật thực tế.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia workshop **“Community Day June 2026”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng bằng các phương pháp và công cụ AI hiện đại. Một số trải nghiệm nổi bật:
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
 - Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+- Qua các case study thực tế, tôi hiểu rõ hơn về tác động của các công cụ AI và tự động hóa đối với **ngành kỹ thuật hạ tầng (Cloud Engineering)** cũng như giới hạn của chúng trước tư duy con người.
 
 #### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- Tiếp thu các giải pháp giải quyết bài toán phức tạp hệ thống (**system complexity**) khi doanh nghiệp mở rộng quy mô.
+- Nắm bắt cách ứng dụng AI vào **FinOps** để phân tích hóa đơn tài nguyên và tối ưu hóa chi phí vận hành trên Cloud.
+- Hiểu rõ quy trình kiểm tra bảo mật (**penetration testing**) và quản lý thông tin xác thực an toàn trong hệ thống.
 
 #### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+- Trực tiếp tìm hiểu về các giải pháp và công cụ AI hỗ trợ tự động hóa trong quản lý hạ tầng và vận hành đám mây.
+- Học cách ứng dụng AI vào **FinOps** để phân tích hóa đơn, tối ưu hóa chi phí tài nguyên AWS và cải thiện hiệu suất vận hành
 
 #### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- Sự kiện tạo cơ hội giao lưu, kết nối với cộng đồng công nghệ AWS và trao đổi trực tiếp qua phần hỏi đáp tương tác cao với các chuyên gia.
+- Qua các chia sẻ thực tế, tôi nhận ra tầm quan trọng của việc kết hợp chặt chẽ giữa các giải pháp hạ tầng kỹ thuật và mục tiêu vận hành của doanh nghiệp, thay vì chỉ tập trung thuần túy vào công nghệ.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- AI là trợ thủ đắc lực trong việc tối ưu hóa chi phí (FinOps) và hỗ trợ vận hành, nhưng không thể thay thế hoàn toàn vai trò quyết định chiến lược của con người.
+- Việc quản lý hạ tầng đám mây đòi hỏi sự am hiểu sâu sắc về kiến trúc mạng, bảo mật và kiểm soát chi phí chặt chẽ.
+- Cần có phương pháp tiếp cận chủ động để đối phó với độ phức tạp của hệ thống khi doanh nghiệp phát triển lớn mạnh.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
+![Event Photo 1](images/photo_01.jpg)
+![Event Photo 2](images/photo_02.png)
+
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
