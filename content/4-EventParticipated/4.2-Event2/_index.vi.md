@@ -113,7 +113,7 @@ Tham gia workshop **“Community Day June 2026”** là một trải nghiệm r�
 - Cần có phương pháp tiếp cận chủ động để đối phó với độ phức tạp của hệ thống khi doanh nghiệp phát triển lớn mạnh.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Event Photo 1](images/photo_01.jpg)
-![Event Photo 2](images/photo_02.png)
+![Event Photo 1](/images/4-EventParticipated/image002.jpg)
+![Event Photo 2](/images/4-EventParticipated/image002a.png)
 
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

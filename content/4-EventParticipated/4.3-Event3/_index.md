@@ -324,6 +324,6 @@ Alongside theoretical parts, I explored practical use cases of AI Agents in proc
 The workshop delivered rich practical insights, deepening my understanding of Agentic AI developmental trends and laying a solid foundation for further research into advanced topics in upcoming sessions.
 
 ### Event Photos
-![Event Photo 1](images/photo_01.jpg)
+![Event Photo 1](/images/4-EventParticipated/image003.jpg)
 
 > **Overall Assessment:** Day 1 of **AWS FCAJ Agent Forge – Deep Dive** provided a robust foundation in **Agentic AI** and **Amazon Bedrock AgentCore**, guiding participants from fundamental concepts to architecture and production deployment methods. The workshop combined theory, visual examples, and hands-on labs while emphasizing crucial elements like security, scalability, lifecycle management, and tool integration. It is an invaluable program for anyone looking to build enterprise-grade AI Agent systems.

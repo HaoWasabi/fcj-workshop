@@ -72,7 +72,9 @@ Việc chuẩn hóa và tự động hóa hệ thống mang lại những giá t
 
 
 ### 3. Kiến trúc giải pháp
-![Sơ đồ kiến trúc](/images/neonfoodmap-system-architecture.jpg)
+![Sơ đồ kiến trúc 1](/images/2-Proposal/diagram1.png)
+
+![Sơ đồ kiến trúc 2](/images/2-Proposal/diagram2.png)
 
 ### Danh sách dịch vụ AWS được sử dụng
 Dưới đây là bảng liệt kê các dịch vụ AWS được sử dụng cho dự án:
@@ -138,4 +140,3 @@ Sau khi hoàn thành quá trình triển khai, hệ thống dự kiến đạt �
 - Cơ sở dữ liệu được triển khai an toàn trong Private Subnet.
 - Hệ thống được giám sát thông qua cơ chế Logging, Monitoring và Alerting.
 - Quy trình triển khai được chuẩn hóa, có khả năng mở rộng và tái sử dụng cho các dự án tương tự.
-

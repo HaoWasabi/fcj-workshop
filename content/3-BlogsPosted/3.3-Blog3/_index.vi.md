@@ -130,7 +130,7 @@ Khi đã nắm vững những viên gạch đầu tiên ấy, AWS sẽ không c�
 ## Hình ảnh
 
 
-![Ảnh minh họa](/images/blog3.jpg)
+![Ảnh minh họa](/images/3-BlogsPosted/image003.jpg)
 
 
 ## Link

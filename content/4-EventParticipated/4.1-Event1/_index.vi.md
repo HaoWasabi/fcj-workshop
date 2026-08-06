@@ -66,6 +66,6 @@ Tham gia game show **“Cloud Architect”** là một trải nghiệm rất b�
 - Nâng cao khả năng làm việc dưới áp lực thời gian và đưa ra quyết định nhanh chóng cùng đồng đội.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Event Photo](/images/photo_01.jpg)
+![Event Photo](/images/4-EventParticipated/image001.jpg)
 
 > Tổng thể, sự kiện không chỉ là sân chơi giải trí lành mạnh mà còn giúp tôi ôn tập lại kiến thức kỹ thuật, rèn luyện tư duy chiến lược và thắt chặt tinh thần đồng đội trong công việc.

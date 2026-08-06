@@ -41,7 +41,7 @@ References:
 Ho Chi Minh City, August 02, 2026 <br>
 Truong Gia Hao
 
-![Kiro Powers Screen](/images/kiro-powers_screen.png)
+![Kiro Powers Screen](/images/3-BlogsPosted/image001.png)
 
 [Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2232309990867294/)
 

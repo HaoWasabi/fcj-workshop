@@ -65,7 +65,10 @@ System standardization and automation deliver practical value:
 ---
 
 ### 3. Solution Architecture
-![System Architecture Diagram](/images/neonfoodmap-system-architecture.jpg)
+
+![System Architecture Diagram 1](/images/2-Proposal/diagram1.png)
+
+![System Architecture Diagram 2](/images/2-Proposal/diagram2.png)
 
 ### List of AWS Services Used
 Below is a table listing the AWS services utilized in the project:
@@ -88,7 +91,7 @@ Below is a table listing the AWS services utilized in the project:
 ### 4. Timeline & Milestones
 
 | Phase | Duration | Main Tasks |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | 
 | **Week 1: Research & Design** | 22/06/2026 - 26/06/2026 | - Explore AWS Foundations (Global Infrastructure, IAM, VPC, EC2, S3).<br><br>- Design system architecture (Application, Database, Storage, Networking) and data flow diagrams. |
 | **Week 2: Services Exploration & Detailed Design** | 29/06/2026 - 03/07/2026 | - Explore RDS and database migration procedures.<br><br>- Explore ECS/ECR, CloudWatch, SQS, Athena, QuickSight, API Gateway, and Load Balancer.<br><br>- Finalize deployment architecture diagram. |
 | **Week 3: Front-end & Back-end Development** | 06/07/2026 - 10/07/2026 | - Develop Frontend (build UI, integrate APIs, Responsive UI).<br><br>- Develop Backend (Database Schema, RESTful API, Authentication/Authorization).<br><br>- Create IAM User, security policies, and setup Billing Alerts. |

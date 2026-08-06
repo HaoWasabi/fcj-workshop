@@ -125,7 +125,7 @@ Participating in the **“Community Day June 2026”** workshop was a very rewar
 - A proactive approach is needed to cope with the increasing complexity of the system as the business grows.
 
 #### Some event photos
-![Event Photo 1](images/photo_01.jpg)
-![Event Photo 2](images/photo_02.png)
+![Event Photo 1](/images/4-EventParticipated/image002.jpg)
+![Event Photo 2](/images/4-EventParticipated/image002a.png)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

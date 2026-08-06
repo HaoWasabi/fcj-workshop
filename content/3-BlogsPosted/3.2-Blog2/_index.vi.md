@@ -42,6 +42,6 @@ Link bài viết tham khảo: https://docs.aws.amazon.com/prescriptive-guidance/
 TP. Hồ Chí Minh, 31 tháng 07, 2026 <br>
 Diệp Thụy An
 
-![Ảnh minh họa](/images/blog2.png)
+![Ảnh minh họa](/images/3-BlogsPosted/image002.png)
 
 [Link bài đăng tại AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2230171591081134/)

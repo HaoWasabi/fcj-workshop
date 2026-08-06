@@ -107,7 +107,7 @@ Once you've mastered those first building blocks, AWS will no longer be a collec
 ## Image
 
 
-![Example Image](/images/blog3.jpg)
+![Example Image](/images/3-BlogsPosted/image003.jpg)
 
 
 ## Link

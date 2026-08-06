@@ -49,6 +49,6 @@ Link to the reference article: https://docs.aws.amazon.com/prescriptive-guidance
 Ho Chi Minh City, July 31, 2026 <br>
 Diep Thuy An
 
-![Illustrative Image](/images/blog2.png)
+![Illustrative Image](/images/3-BlogsPosted/image002.png)
 
 [Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2230171591081134/)

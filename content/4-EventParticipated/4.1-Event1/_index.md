@@ -65,6 +65,6 @@ Participating in the **"Cloud Architect"** game show was a rewarding experience,
 - Enhanced the ability to work under time pressure and make quick decisions alongside teammates.
 
 #### Event Photos
-![Event Photo](/images/photo_01.jpg)
+![Event Photo](/images/4-EventParticipated/image001.jpg)
 
 > Overall, the event was not only a healthy entertainment playground but also helped me review technical knowledge, practice strategic thinking, and strengthen teamwork skills.
