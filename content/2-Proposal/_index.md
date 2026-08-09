@@ -11,11 +11,11 @@ pre: " <b> 2. </b> "
 
 ### 1. Project Overview
 
-This proposal presents a solution for deploying the NeonFoodMap system on the Amazon Web Services (AWS) platform using a Cloud-Native architecture, meeting requirements for scalability, high availability, security, and automated software release processes. The objective of the solution is to build a reusable deployment infrastructure that supports iterative deployments while standardizing operational procedures following DevOps practices in a Production environment.
+NeonFoodMap is a food map website that allows users to search, explore, and review dining locations in real time. The system integrates features such as POI search, GPS positioning, route display, location reviews, and text-to-speech descriptions to improve the user experience. Because the system processes data in real time and must serve many users simultaneously, it requires a flexible, scalable, highly available, and easy-to-maintain infrastructure.
 
-NeonFoodMap is a food map web platform that allows users to search, discover, and review dining locations in real-time. The system integrates features such as Point of Interest (POI) search, GPS positioning, route display, location reviews, and text-to-speech description playback to enhance user experience. Given its real-time data processing characteristics and concurrent user demands, the system needs to be deployed on a flexible, scalable, highly available, and easily maintainable infrastructure.
+This proposal presents a solution for deploying the NeonFoodMap system on the Amazon Web Services (AWS) platform using a Cloud-Native architecture that meets requirements for scalability, high availability, security, and automated software release processes. The objective is to build a reusable deployment infrastructure that supports iterative deployments and standardizes operational procedures according to DevOps practices in a production environment.
 
-The proposal focuses on building a deployment architecture using Docker and Amazon ECS Fargate, source code management via GitHub, automated Build–Test–Deploy workflows through GitHub Actions and OpenID Connect (OIDC), Docker Image storage in Amazon ECR, Amazon RDS database deployment in Private Subnets, static resource management using Amazon S3, and system monitoring via Amazon CloudWatch. The solution aims to establish a unified, secure, and scalable deployment workflow for subsequent phases of the project.
+The proposal focuses on building an AWS deployment architecture with Docker and Amazon ECS Fargate, source code management on GitHub, automated Build–Test–Deploy workflows through GitHub Actions and OpenID Connect (OIDC), Docker image storage on Amazon ECR, Amazon RDS deployment in private subnets, static resource management on Amazon S3, and monitoring through Amazon CloudWatch. The solution aims to establish a unified, secure, and scalable deployment workflow for the next phases of the project.
 
 ---
 
@@ -66,25 +66,52 @@ System standardization and automation deliver practical value:
 
 ### 3. Solution Architecture
 
+#### Overall Architecture
 ![System Architecture Diagram 1](/images/2-Proposal/diagram1.png)
 
+The deployment architecture is built across two Availability Zones to improve availability:
+
+- **Frontend distribution:** Static content is stored on Amazon S3 Static Website and distributed through Amazon CloudFront to improve access speed for users.
+- **API processing:** CloudFront forwards API requests to the ALB. The ALB routes traffic to ECS Fargate tasks in private subnets, and Auto Scaling distributes them across two Availability Zones.
+- **Database:** Amazon RDS MySQL is deployed in a Multi-AZ configuration with a primary and a synchronized standby database to improve fault tolerance.
+- **CI/CD:** Source code is pushed to GitHub. GitHub Actions uses OIDC to authenticate to AWS STS, builds container images, and pushes them to Amazon ECR; ECS then pulls the images and deploys the new versions.
+- **Security and infrastructure:** AWS IAM manages access permissions, AWS Secrets Manager stores sensitive information, and AWS CloudFormation standardizes infrastructure provisioning and changes.
+- **System observability:** Amazon CloudWatch collects logs and metrics, while Amazon SNS sends alerts to administrators.
+
+#### Service Connection Architecture
 ![System Architecture Diagram 2](/images/2-Proposal/diagram2.png)
 
-### List of AWS Services Used
-Below is a table listing the AWS services utilized in the project:
+- Users access the application through the Internet Gateway and Application Load Balancer (ALB).
+- The frontend and backend are packaged into containers and run on Amazon ECS Fargate inside the ECS Cluster.
+- AWS Cloud Map is used for Service Discovery between containers in the ECS Cluster, allowing services to communicate internally without needing to update IP addresses when task revisions change.
+
+#### Architecture Components
 
 | AWS Service | Service Type | Role & Function in the System |
 | --- | --- | --- |
-| **AWS IAM** | Identity & Access Management | Manages users, groups, roles, and security policies, with Force MFA strictly enforced for all accounts. |
+| **AWS IAM** | Identity & Access Management | Manages users, groups, roles, and security policies, with Force MFA strongly recommended for all accounts. |
 | **VPC** | Networking | Provides a Virtual Private Cloud with CIDR blocks, public and private subnets, route tables, Internet Gateways, and NAT Gateways. |
-| **Amazon RDS** | Relational Database | Powers the relational database (RDS MySQL Multi-AZ) to store and manage application data. |
-| **Amazon S3** | Object Storage | Stores files using specialized buckets (frontend, media, audio, logs), supporting versioning, lifecycle policies, and encryption. |
-| **Amazon ECR** | Container Registry | A repository for Frontend and Backend Docker Container Images. |
-| **Amazon ECS** | Container Orchestration | Manages application clusters running via the Fargate launch type. |
-| **Application Load Balancer (ALB)** | Load Balancing | Distributes internet HTTP/HTTPS traffic to target groups and supports redirection configuration and health checks. |
-| **Amazon CloudWatch** | Monitoring & Observability | Collects logs (CloudWatch Logs), tracks metrics, and configures dashboards and alarms. |
-| **Amazon SNS** | Push Notification Service | Sends alert notifications (e.g., billing alerts for costs) to administrators. |
-| **AWS CloudFront** | Content Delivery Network (CDN) | Delivers global content, accelerates frontend access, and caches audio files. |
+| **Amazon RDS** | Relational Database | Supports the relational database (RDS MySQL Multi-AZ) used to store and manage application data. |
+| **Amazon S3** | Object Storage | Stores files in dedicated buckets (frontend, media, audio, logs), supporting versioning, lifecycle policies, and encryption. |
+| **Amazon ECR** | Container Registry | Stores Docker container images for both the frontend and backend. |
+| **Amazon ECS** | Container Orchestration | Manages clusters of applications running with the Fargate launch type. |
+| **Application Load Balancer (ALB)** | Load Balancing | Distributes internet HTTP/HTTPS traffic to target groups and supports redirection and health checks. |
+| **Amazon CloudWatch** | Monitoring & Observability | Collects logs and metrics, and configures dashboards and alarms. |
+| **Amazon SNS** | Notification Service | Sends alert notifications such as billing alerts to administrators. |
+| **AWS CloudFront** | Content Delivery Network (CDN) | Delivers content globally, improves frontend access speed, and caches media content. |
+
+---
+
+#### AWS Well-Architected Framework
+
+| Pillar | Applied Solution |
+| --- | --- |
+| Operational Excellence | GitHub Actions CI/CD, CloudFormation, CloudWatch. |
+| Security | IAM Least Privilege, Secrets Manager, KMS, Private Subnets. |
+| Reliability | Application Load Balancer, ECS Auto Scaling, RDS Multi-AZ, VPC Endpoint for S3. |
+| Performance Efficiency | CloudFront, ECS Fargate Auto Scaling, RDS Optimization. |
+| Cost Optimization | ECS Fargate Auto Scaling, S3 Lifecycle. |
+| Sustainability | Scale on demand, shut down dev environment outside working hours. |
 
 ---
 
@@ -103,28 +130,64 @@ Below is a table listing the AWS services utilized in the project:
 
 ### 5. Estimated Budget
 
-The system maximizes the use of the **AWS Free Tier** and **Serverless Pay-As-You-Go** model (paying only for actual resources used), helping optimize operational costs to the lowest level.
+The system makes maximum use of the **AWS Free Tier** and **Serverless Pay-As-You-Go** model, paying only for the resources actually used. This helps optimize operational costs to the lowest possible level.
 
-| AWS Service | Actual Usage / Phase | Estimated Actual Cost (USD) | Role & Function in the System |
-| --- | --- | --- | --- |
-| **Amazon RDS** | RDS MySQL Multi-AZ (continuous run, with version scale/migration) | **$10.00 - $15.00** | Powers the relational database to store and manage application data. |
-| **Amazon S3 & ECR** | File storage (media, logs) and Docker Container Images | **$2.00 - $5.00** | Specialized file storage and Docker Container Image repository for Frontend/Backend. |
-| **Amazon ECS & NAT Gateway** | Running container clusters (Fargate) combined with continuous NAT Gateways | **$10.00 - $20.00** | Manages application server clusters and handles network routing. |
-| **Application Load Balancer (ALB)** | Distributing internet HTTP/HTTPS traffic | **$3.00 - $6.00** | Distributes incoming traffic to target groups, supporting health checks. |
-| **Amazon CloudWatch & SNS** | Collecting logs (CloudWatch Logs), metrics, dashboards, and alarms | **$1.00 - $3.00** | Monitors system health, tracks metrics, and sends alert notifications via SNS. |
-| **AWS CloudFront** | CDN content delivery and caching | **$0.00 - $2.00** | Accelerates frontend access and caches audio files. |
-| **TOTAL ACTUAL COST** | **System Operation & Testing** | **~$26.00 - ~$51.00 USD / month** | *Closely aligns with actual cost log milestones incurred during testing and resource configuration (actual recorded approx. **$31.52 on 25/07/2026**).* |
+| AWS Service | Estimated Usage / Phase | Estimated Cost (USD) |
+| --- | --- | --- |
+| **Amazon ECS (Fargate)** | Running backend containers in production with 2 tasks across 2 AZs and Auto Scaling | **~$10 - $20** |
+| **Amazon RDS MySQL** | Multi-AZ production database | **~$10 - $15** |
+| **NAT Gateway, ALB, and VPC** | Production networking and load balancing | **~$30 - $40** |
+| **Amazon CloudFront** | Static web and API distribution | **~$0 - $2** |
+| **Amazon S3** | Static web, media, and logs storage | **~$2 - $5** |
+| **Amazon CloudWatch and SNS** | Logs, metrics, alarms, and email alerts | **~$1 - $3** |
+| **AWS Secrets Manager and Amazon ECR** | Secret storage and container images | **~$2 - $3** |
+| **Estimated total per month** |  | **~$55 - $88** |
+
+In addition, the proposal also applies cost optimization measures such as:
+- Configuring **AWS Budgets** and SNS alerts at 50%, 80%, and 100% of the monthly budget.
+- Monitoring major cost drivers such as NAT Gateway, ECS Fargate, RDS, and CloudWatch.
+- Maintaining only the necessary number of ECS tasks and using Auto Scaling to avoid idle resource allocation.
+- Deleting or stopping unused resources in the staging environment after testing.
+- Using CloudFront caching for static web and media to reduce origin traffic.
 
 ---
 
-### 6. Expected Outcomes
+### 6. Risk Assessment
 
-Upon completion of the deployment process, the system is expected to achieve the following results:
+#### Risk Matrix
 
-- Completion of the Cloud-Native deployment architecture on AWS.
-- Fully automated CI/CD pipeline from Build to Deploy.
-- Applications deployed using Amazon ECS Fargate.
-- Docker Images managed centrally on Amazon ECR.
-- Database securely deployed within a Private Subnet.
-- System monitored via Logging, Monitoring, and Alerting mechanisms.
-- Standardized, scalable, and reusable deployment workflow for similar future projects.
+| Risk | Likelihood | Impact |
+| --- | --- | --- |
+| AWS costs exceed forecast | Medium | Medium |
+| ECS task or container failure | Medium | Medium |
+| Database incident | Low | High |
+| Sensitive information exposure | Low | Very High |
+| Sudden traffic spike | Medium | Medium |
+| Insufficient logs or alerts | Medium | Medium |
+| Error during new version deployment | Medium | Medium |
+
+#### Contingency and Response Plan
+
+- Address cost alerts immediately upon reaching budget thresholds; identify the service generating excess costs and stop or adjust unnecessary resources.
+- When API or container errors occur, check CloudWatch Logs, ALB health check status, and ECS task definition before rolling back or deploying a fix.
+- In the event of a data incident, prioritize data protection, assess the impact, and execute recovery following tested backup/restore procedures.
+- Upon detecting signs of credential exposure, revoke or rotate the secret, review IAM permissions, and audit the deployment history.
+
+---
+
+### 7. Expected Outcomes
+
+After completing the deployment process, the system is expected to achieve the following results:
+
+- **Technical improvement:** Digitizing POI commentary and management, replacing manual information delivery with a multimedia platform that can be monitored, scaled, and automatically deployed on AWS.
+- **Long-term value:** Establishing a reusable content and data platform for other tourism areas, while laying the groundwork for expanding user behavior analytics, multilingual content, and collaboration with local businesses in the future.
+
+---
+
+### 8. References
+
+[1]: [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
+
+[2]: [The First Cloud Journey](https://cloudjourney.awsstudygroup.com/)
+
+[3]: [AWS Documentation](https://docs.aws.amazon.com/)

@@ -6,12 +6,13 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **AWS Vietnam Co., Ltd.** through the **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** program from **24/06/2026** to **15/08/2026**, I had the opportunity to learn, practice, and apply the knowledge I had gained at university in a real working environment.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+I worked with my team on the **DevOps on AWS with NeonFoodMap** project, a food map website, which helped me improve my Cloud Computing skills, AWS service deployment skills, technical document reading, system design according to the AWS Well-Architected Framework, teamwork, progress management, report presentation, and problem-solving during implementation.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+In terms of work ethic, I always tried to complete my tasks well, follow the regulations, and actively exchange ideas with colleagues to improve work efficiency.
+
+To reflect objectively on my internship experience, I would like to evaluate myself based on the following criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
@@ -19,7 +20,7 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 | 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
 | 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
 | 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
+| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ✅    | ☐    | ☐       |
 | 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
 | 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
 | 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
@@ -30,6 +31,6 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Improve problem-solving thinking
+* Communicate more effectively in daily interactions and professional work
+* Continue strengthening the ability to handle situations more effectively

@@ -8,7 +8,7 @@ pre: " <b> 4. </b> "
 
 
 
-Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+Trong quá trình thực tập, em đã tham gia 4 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
 
 
@@ -19,7 +19,7 @@ Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
-&emsp;**Vai trò trong sự kiện:** Đấu thủ (Đội Ngũ Đại Hiệp)
+&emsp;**Vai trò trong sự kiện:** Người thi đấu (Đội Ngũ Đại Hiệp)
 
 
 
@@ -42,4 +42,16 @@ Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
+
+
+
+### [Event 4](4.4-Event4/)
+&emsp;**Tên sự kiện:** Agent Forge - Deepdive Day 2
+
+&emsp;**Thời gian:** 09:00 ngày 08/08/2026
+
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
+
 

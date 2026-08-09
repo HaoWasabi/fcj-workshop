@@ -1,55 +1,44 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-07-27
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hoàn thành nhiệm vụ AWS-008: Thiết lập CloudFront + CDN theo kế hoạch của Sprint 3.
+- Tạo các tên miền CDN
+- Frontend được phân phối qua CloudFront
+- Các tệp âm thanh được lưu vào bộ nhớ đệm trên toàn cầu
+- HTTPS hoạt động bình thường
+- Cache hit rate > 80%
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+Hoàn thành nhiệm vụ QA-002: End-to-End Testing theo kế hoạch của Sprint 4.
+- Tất cả các luồng người dùng quan trọng đều hoạt động tốt
+- Không có liên kết hỏng hoặc lỗi 404
+- Phát âm thanh qua CloudFront hoạt động bình thường
+- Thông báo lỗi hữu dụng
+- Hiệu năng ở mức chấp nhận được
 
+### Các công việc cần triển khai trong tuần:
+
+| STT | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 1 | - Tiếp nhận và phân tích yêu cầu của Sprint 3 <br> - Nghiên cứu Acceptance Criteria của AWS-008 | 29/07/2026 | 30/07/2026 | <https://aws.amazon.com/vi/cloudfront/> |
+| 2 | - Tạo CloudFront distributions | 29/07/2026 | 30/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Cấu hình hành vi bộ nhớ đệm (cache behaviors) (*.js: 24h, *.html: 1h) <br> - Thiết lập TTL cho bộ nhớ đệm (1 giờ cho frontend, 24 giờ cho audio)| 29/07/2026 | 30/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Thiết lập HTTPS/SSL cho CloudFront <br> - Thiết lập Origin Access Identity (OAI) cho S3 <br> - Cấu hình nén dữ liệu (gzip, brotli)| 29/07/2026 | 30/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Kiểm thử hiệu năng CDN (độ trễ từ Singapore) <br> - Theo dõi tỷ lệ cache hit (cache hit ratio)| 30/07/2026 | 31/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Kiểm thử quy trình đăng ký và đăng nhập của người dùng <br> - Kiểm thử tính năng duyệt các điểm tham quan (POI) và tải thông tin mô tả <br> - Kiểm thử tính năng phát âm thanh qua CloudFront <br> - Kiểm thử quy trình đặt tour <br> - Kiểm thử quy trình đặt tour <br> - Kiểm thử tích hợp thanh toán (môi trường Sandbox) <br> - Kiểm thử các tình huống lỗi (dữ liệu không hợp lệ, hết thời gian chờ) <br> - Kiểm thử khả năng hiển thị trên thiết bị di động (responsive)| 30/07/2026 | 31/07/2026   |
+| 7 | - Hoàn thiện tài liệu triển khai <br> - Chuẩn bị cho Sprint 3 | 31/07/2026 | 01/08/2026   |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành triển khai và cấu hình Task AWS-008 theo yêu cầu của Sprint 3.
+- Hoàn thành kiểm thử Task QA-002 theo yêu cầu của Sprint 3.
+- Hiểu rõ quy trình triển khai và cấu hình tài nguyên AWS liên quan đến task.
+- Kiểm thử thành công và xác nhận tài nguyên hoạt động theo đúng Acceptance Criteria.
+- Hoàn thiện tài liệu hướng dẫn triển khai và ghi nhận các vấn đề phát sinh trong quá trình thực hiện.
+- Sẵn sàng chuyển sang các nhiệm vụ tiếp theo của Sprint sau khi hoàn thành AWS-008, QA-002.

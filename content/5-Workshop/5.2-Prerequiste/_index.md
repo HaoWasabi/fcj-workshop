@@ -1,13 +1,13 @@
 ---
-title : "Prerequiste"
+title : "Prerequisites"
 date : 2024-01-01 
 weight : 2 
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
+### IAM permissions
+Attach the following IAM permission policy to your AWS user account so you can deploy and clean up the resources used in this workshop.
 ```
 {
     "Version": "2012-10-17",
@@ -216,7 +216,7 @@ Add the following IAM permission policy to your user account to deploy and clean
 
 ```
 
-#### Provision resources using CloudFormation
+### Provision resources with CloudFormation
 
 In this lab, we will use **N.Virginia region (us-east-1)**.
 

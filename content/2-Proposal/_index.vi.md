@@ -11,21 +11,15 @@ pre: "<b>2.</b>"
 
 ### 1. Tổng quan dự án
 
-
-Đề xuất này trình bày giải pháp triển khai hệ thống NeonFoodMap trên nền tảng Amazon Web Services (AWS) theo kiến trúc Cloud-Native, đáp ứng các yêu cầu về khả năng mở rộng, tính sẵn sàng cao, bảo mật và tự động hóa quy trình phát hành phần mềm. Mục tiêu của giải pháp là xây dựng một hạ tầng triển khai có khả năng tái sử dụng, hỗ trợ triển khai lặp lại, đồng thời chuẩn hóa quy trình vận hành theo định hướng DevOps trong môi trường Production.
-
-
 NeonFoodMap là nền tảng website bản đồ ẩm thực, cho phép người dùng tìm kiếm, khám phá và đánh giá các địa điểm ăn uống theo thời gian thực. Hệ thống tích hợp các chức năng như tìm kiếm địa điểm (POI), định vị GPS, hiển thị lộ trình, đánh giá địa điểm và phát nội dung mô tả bằng công nghệ Text-to-Speech nhằm nâng cao trải nghiệm người dùng. Với đặc điểm xử lý dữ liệu theo thời gian thực và yêu cầu phục vụ nhiều người dùng đồng thời, hệ thống cần được triển khai trên một hạ tầng có khả năng mở rộng linh hoạt, đảm bảo tính sẵn sàng và dễ dàng bảo trì.
 
-
-Đề xuất tập trung xây dựng kiến trúc triển khai sử dụng Docker và Amazon ECS Fargate, quản lý mã nguồn bằng GitHub, tự động hóa quy trình Build–Test–Deploy thông qua GitHub Actions và OpenID Connect (OIDC), lưu trữ Docker Image trên Amazon ECR, triển khai cơ sở dữ liệu Amazon RDS trong Private Subnet, quản lý tài nguyên tĩnh bằng Amazon S3 và giám sát hệ thống bằng Amazon CloudWatch. Giải pháp hướng tới việc hình thành một quy trình triển khai thống nhất, an toàn và có khả năng mở rộng cho các giai đoạn phát triển tiếp theo của dự án.
-
+Đề xuất này trình bày giải pháp triển khai hệ thống NeonFoodMap trên nền tảng Amazon Web Services (AWS) theo kiến trúc Cloud-Native, đáp ứng các yêu cầu về khả năng mở rộng, tính sẵn sàng cao, bảo mật và tự động hóa quy trình phát hành phần mềm. Mục tiêu của giải pháp là xây dựng một hạ tầng triển khai có khả năng tái sử dụng, hỗ trợ triển khai lặp lại, đồng thời chuẩn hóa quy trình vận hành theo định hướng DevOps trong môi trường Production.
 
 ---
 
 
 ### 2. Phát biểu vấn đề
-### Hiện trạng
+#### Hiện trạng
 
 Trước khi triển khai đề xuất, dự án NeonFoodMap Website mới chỉ tồn tại ở dạng mã nguồn ứng dụng (Frontend và Backend) hoạt động đơn lẻ, chưa được chuẩn hóa quy trình triển khai hay tích hợp lên hạ tầng đám mây. Cụ thể:
 
@@ -33,7 +27,7 @@ Trước khi triển khai đề xuất, dự án NeonFoodMap Website mới chỉ
 * **Chưa ứng dụng mô hình Container hóa:** Ứng dụng chưa được đóng gói chuẩn hóa dưới dạng Docker Image để vận hành nhất quán giữa các môi trường.
 * **Hạ tầng AWS chưa được thiết lập:** Hệ thống mạng VPC, cơ sở dữ liệu phân tán, các chính sách bảo mật IAM tối ưu cũng như các cơ chế giám sát (Monitoring/Logging) trên nền tảng AWS chưa được xây dựng và cấu hình đồng bộ.
 
-### Mục tiêu
+#### Mục tiêu
 
 Đề xuất hướng tới các mục tiêu kỹ thuật sau:
 
@@ -45,7 +39,7 @@ Trước khi triển khai đề xuất, dự án NeonFoodMap Website mới chỉ
 - Thiết lập cơ chế giám sát, ghi log và cảnh báo tập trung.
 - Chuẩn hóa quy trình triển khai theo mô hình DevOps và nâng cao khả năng tái sử dụng.
 
-### Giải pháp
+#### Giải pháp
 
 - Thiết kế kiến trúc hạ tầng AWS.
 - Xây dựng quy trình CI/CD.
@@ -56,7 +50,7 @@ Trước khi triển khai đề xuất, dự án NeonFoodMap Website mới chỉ
 - Xây dựng hệ thống Logging và Monitoring.
 - Hoàn thiện tài liệu triển khai theo từng Sprint.
 
-### Lợi tức đầu tư
+#### Lợi tức đầu tư
 Việc chuẩn hóa và tự động hóa hệ thống mang lại những giá trị thiết thực:
 
 - Tối ưu hóa chi phí vận hành (Cost Efficiency): Mô hình Serverless (ECS Fargate) và Serverless Storage giúp chỉ chi trả theo tài nguyên thực tế sử dụng, giảm thiểu lãng phí hạ tầng idle (nhàn rỗi).
@@ -71,13 +65,28 @@ Việc chuẩn hóa và tự động hóa hệ thống mang lại những giá t
 ---
 
 
-### 3. Kiến trúc giải pháp
+### 3. Sơ đồ kiến trúc 
+
+#### Kiến trúc tổng thể
 ![Sơ đồ kiến trúc 1](/images/2-Proposal/diagram1.png)
 
+Kiến trúc triển khai được xây dựng trên hai Availability Zone để cải thiện tính sẵn sàng:
+
+- **Phân phối frontend:** Nội dung tĩnh được lưu trên Amazon S3 Static Website và phân phối qua Amazon CloudFront để tăng tốc độ truy cập cho người dùng.
+- **Xử lý API:** CloudFront chuyển các yêu cầu API đến ALB. ALB định tuyến lưu lượng đến các ECS Fargate task trong private subnet và Auto Scaling Group phân bổ trên hai Availability Zone.
+- **Cơ sở dữ liệu:** Amazon RDS MySQL triển khai Multi-AZ, gồm primary database và standby database đồng bộ nhằm nâng cao khả năng chịu lỗi.
+- **CI/CD:** Đẩy mã nguồn lên GitHub. GitHub Actions dùng OIDC để xác thực với AWS STS, build container image và push lên Amazon ECR; ECS sau đó pull image và triển khai phiên bản mới.
+- **Bảo mật và hạ tầng:** AWS IAM quản lý quyền truy cập, AWS Secrets Manager lưu trữ thông tin nhạy cảm, và AWS CloudFormation chuẩn hóa việc cung cấp và thay đổi hạ tầng.
+- **Quan sát hệ thống:** Amazon CloudWatch thu thập log và metric; log có thể được lưu trữ lâu dài trên S3. Amazon SNS gửi cảnh báo đến email.
+
+#### Kiến trúc kết nối dịch vụ
 ![Sơ đồ kiến trúc 2](/images/2-Proposal/diagram2.png)
 
-### Danh sách dịch vụ AWS được sử dụng
-Dưới đây là bảng liệt kê các dịch vụ AWS được sử dụng cho dự án:
+- Người dùng truy cập ứng dụng qua Internet Gateway và Application Load Balancer (ALB).
+- Frontend và backend được đóng gói thành container, vận hành bằng Amazon ECS Fargate trong ECS Cluster.
+- AWS Cloud Map được sử dụng để quản lý Service Discovery giữa các Container trong ECS Cluster, giúp các dịch vụ giao tiếp nội bộ mà không cần phải cập nhật lại IP khi cập nhật Task Revision mới.
+
+#### Các thành phần kiến trúc
 
 | Dịch vụ AWS | Loại hình Dịch vụ | Vai trò & Chức năng trong Hệ thống |
 | --- | --- | --- |
@@ -87,11 +96,21 @@ Dưới đây là bảng liệt kê các dịch vụ AWS được sử dụng ch
 | **Amazon S3** | Object Storage | Lưu trữ tệp tin với các bucket chuyên biệt (frontend, media, audio, logs), hỗ trợ cấu hình phiên bản (versioning), chính sách vòng đời (lifecycle) và mã hóa. |
 | **Amazon ECR** | Container Registry | Kho lưu trữ các Docker Container Images cho cả Frontend và Backend. |
 | **Amazon ECS** | Container Orchestration | Quản lý cụm cụm máy chủ ảo (Cluster) chạy ứng dụng theo dạng Fargate launch type. |
-| **Application Load Balancer (ALB)** | Load Balancing | Phân phối lưu lượng truy cập HTTP/HTTPS internet vào các target groups và hỗ trợ cấu hình chuyển hướng, health checks. |
+| **Application Load Balancer** | Load Balancing | Phân phối lưu lượng truy cập HTTP/HTTPS internet vào các target groups và hỗ trợ cấu hình chuyển hướng, health checks. |
 | **Amazon CloudWatch** | Monitoring & Observability | Thu thập log (CloudWatch Logs), theo dõi metrics và thiết lập các dashboard, báo động (alarms). |
 | **Amazon SNS** | Push Notification Service | Gửi thông báo cảnh báo (ví dụ: billing alerts cho chi phí) tới quản trị viên. |
-| **AWS CloudFront** | Content Delivery Network (CDN) | Phân phối nội dung toàn cầu, tăng tốc độ truy cập giao diện frontend và caching file âm thanh. |
+| **AWS CloudFront** | Content Delivery Network (CDN) | Phân phối nội dung từ S3 và chuyển API request đến ALB |
 
+#### AWS Well-Architected Framework
+
+| Trụ cột | Giải pháp áp dụng |
+| --- | --- |
+| Operational Excellence | GitHub Actions CI/CD, CloudFormation, CloudWatch. |
+| Security | IAM Least Privilege, Secrets Manager, KMS, Private Subnets |
+| Reliability | Application Load Balancer, ECS Auto Scaling, RDS Multi-AZ, VPC Endpoint for S3. |
+| Performance Efficiency | CloudFront, ECS Fargate AutoScaling, RDS Optimization. |
+| Cost Optimization | ECS Fargate Auto Scaling, S3 Lifecycle. |
+| Sustainability | Scale theo nhu cầu, tắt môi trường dev ngoài giờ |
 
 ----
 
@@ -113,30 +132,57 @@ Dưới đây là bảng liệt kê các dịch vụ AWS được sử dụng ch
 
 Hệ thống tận dụng tối đa mô hình **AWS Free Tier** và **Serverless Pay-As-You-Go** (chỉ trả tiền cho tài nguyên thực tế sử dụng), giúp tối ưu hóa chi phí vận hành ở mức thấp nhất.
 
-| Dịch vụ AWS | Mức sử dụng thực tế / giai đoạn | Chi phí thực tế ước tính (USD) | Vai trò & Chức năng trong Hệ thống |
+| Dịch vụ | Cấu hình theo kiến trúc hiện tại | Chi phí/tháng | Chi phí ước tính tối đa/tháng |
 | --- | --- | --- | --- |
-| **Amazon RDS** | RDS MySQL Multi-AZ (chạy liên tục, có scale/migrate version) | **$10.00 - $15.00** | Củng cố cơ sở dữ liệu quan hệ để lưu trữ và quản lý dữ liệu ứng dụng. |
-| **Amazon S3 & ECR** | Lưu trữ tệp tin (media, logs) và Docker Container Images | **$2.00 - $5.00** | Lưu trữ tệp tin chuyên biệt và kho lưu trữ Docker Container Images cho Frontend/Backend. |
-| **Amazon ECS & NAT Gateway** | Chạy cụm container (Fargate) kết hợp NAT Gateways hoạt động liên tục | **$10.00 - $20.00** | Quản lý cụm cụm máy chủ ảo chạy ứng dụng và định tuyến mạng. |
-| **Application Load Balancer (ALB)** | Phân phối lưu lượng HTTP/HTTPS internet | **$3.00 - $6.00** | Phân phối lưu lượng truy cập vào các target groups, hỗ trợ health checks. |
-| **Amazon CloudWatch & SNS** | Thu thập log (CloudWatch Logs), metrics, dashboards và alarms | **$1.00 - $3.00** | Giám sát hệ thống, theo dõi metrics và gửi thông báo cảnh báo qua SNS. |
-| **AWS CloudFront** | Phân phối nội dung CDN và caching | **$0.00 - $2.00** | Tăng tốc độ truy cập giao diện frontend và caching file âm thanh. |
-| **TỔNG CHI PHÍ THỰC TẾ** | **Vận hành hệ thống & Testing** | **~$26.00 - +$51.00 USD / tháng** | *Bám sát theo các mốc log cost thực tế phát sinh trong quá trình chạy thử nghiệm và cấu hình tài nguyên (thực tế ghi nhận khoảng **31.52$ vào ngày 25/07/2026**).* |
+| Amazon ECS (Fargate) | Chạy backend container trên ECS; Production dùng 2 tasks trên 2 AZ với Auto Scaling, ví dụ 0,5 vCPU và 1 GB RAM cho mỗi task. | $9,86 | ~$20–35 |
+| Amazon RDS MySQL | Production dùng Multi-AZ: Primary ở AZ A và Standby ở AZ B. | $11,78 | ~$50 |
+| NAT Gateway, ALB và Amazon VPC | Hai NAT Gateway và ALB cho Production; dashboard hiện gộp một phần chi phí vào [EC2 – Other](https://thuy0an.github.io/aws-learning-journey-fcaj/vi/2-proposal/) và [VPC](https://thuy0an.github.io/aws-learning-journey-fcaj/vi/2-proposal/) . | $32,80 | ~$82–84 |
+| Amazon CloudFront | Phân phối static web từ S3 và định tuyến API; giả định khoảng 100 GB truyền dữ liệu. | $0.00 (Free Tier cho 1 TB) | $0.00 (Free Tier cho 1 TB) |
+| Amazon S3 | Lưu static web, media và logs; giả định khoảng 50 GB. | ~$2 | ~$2 |
+| Amazon CloudWatch và SNS | Flow Logs, container logs, metrics, alarms và gửi email cảnh báo. | $5,61 | ~$5–6 |
+| AWS Secrets Manager và Amazon ECR | Lưu secrets và container images. | ~$2 | ~$3 |
+| Tổng chi phí/tháng | | $64,05 | ~$166–184 |
 
+Ngoài ra đã áp dụng một số biện pháp tối ưu chi phí khác như:
+- Cấu hình **AWS Budgets** và cảnh báo qua SNS ở các ngưỡng 50%, 80% và 100% ngân sách tháng.
+- Theo dõi chi phí NAT Gateway, ECS Fargate, RDS và CloudWatch là các nhóm chi phí chính.
+- Chỉ duy trì số lượng ECS task cần thiết; sử dụng Auto Scaling để tránh cấp phát tài nguyên nhàn rỗi.
+- Xóa hoặc dừng các tài nguyên không còn sử dụng trong môi trường staging sau khi hoàn tất kiểm thử.
+- Sử dụng CloudFront cache cho static web và media để giảm lưu lượng đến origin; cân nhắc S3 Lifecycle khi dung lượng log hoặc media tăng lên.
 
 ---
 
+### 6. Đánh giá rủi ro
+#### Ma trận rủi ro
+| Rủi ro | Khả năng | Ảnh hưởng |
+| --- | --- | --- |
+| Chi phí AWS vượt dự báo | Trung bình | Trung bình |
+| ECS task hoặc container gặp lỗi | Trung bình | Trung bình |
+| Sự cố cơ sở dữ liệu | Thấp | Cao |
+| Lộ thông tin nhạy cảm | Thấp | Rất cao |
+| Lưu lượng tăng đột biến | Trung bình | Trung bình |
+| Log hoặc cảnh báo không đầy đủ | Trung bình | Trung bình |
+| Lỗi trong quá trình triển khai phiên bản mới | Trung bình | Trung bình |
 
-### 6. Kết quả mong đợi
+#### Kế hoạch dự phòng và ứng phó
+- Xử lý cảnh báo chi phí ngay khi chạm ngưỡng ngân sách; xác định dịch vụ phát sinh và dừng hoặc điều chỉnh tài nguyên không cần thiết.
+- Khi API hoặc container lỗi, kiểm tra CloudWatch Logs, trạng thái ALB health check và ECS task definition trước khi rollback hoặc triển khai bản sửa.
+- Khi có sự cố dữ liệu, ưu tiên bảo vệ dữ liệu, đánh giá ảnh hưởng và thực hiện khôi phục theo quy trình backup/restore đã kiểm thử.
+- Khi phát hiện dấu hiệu lộ thông tin xác thực, thu hồi hoặc xoay vòng secret, kiểm tra IAM permissions và rà soát lịch sử triển khai.
+
+
+### 7. Kết quả mong đợi
 
 
 Sau khi hoàn thành quá trình triển khai, hệ thống dự kiến đạt được các kết quả sau:
 
+- **Cải tiến kỹ thuật:** Số hóa việc thuyết minh và quản lý POI, thay thế quy trình cung cấp thông tin thủ công bằng nền tảng đa phương tiện có thể giám sát, mở rộng và triển khai tự động trên AWS.
+- **Giá trị dài hạn:** Hình thành nền tảng nội dung và dữ liệu có thể tái sử dụng cho các khu vực du lịch khác; đồng thời tạo cơ sở để mở rộng phân tích hành vi người dùng, nội dung đa ngôn ngữ và hợp tác với các hộ kinh doanh địa phương trong tương lai.
 
-- Hoàn thiện kiến trúc triển khai trên nền tảng AWS theo mô hình Cloud-Native.
-- Quy trình CI/CD hoạt động tự động từ Build đến Deploy.
-- Ứng dụng được triển khai bằng Amazon ECS Fargate.
-- Docker Image được quản lý tập trung trên Amazon ECR.
-- Cơ sở dữ liệu được triển khai an toàn trong Private Subnet.
-- Hệ thống được giám sát thông qua cơ chế Logging, Monitoring và Alerting.
-- Quy trình triển khai được chuẩn hóa, có khả năng mở rộng và tái sử dụng cho các dự án tương tự.
+### 8. Tài liệu tham khảo
+
+[1]: [AWS Well-Architected Framework](https://aws.amazon.com/vi/architecture/well-architected/)
+
+[2]: [The First Cloud Journey](https://cloudjourney.awsstudygroup.com/)
+
+[3]: [AWS Documentation](https://docs.aws.amazon.com/)

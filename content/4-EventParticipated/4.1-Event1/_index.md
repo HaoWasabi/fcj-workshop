@@ -6,65 +6,61 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# "Cloud Architect" Game Event Report
+# "Cloud Architect" Event Reflection
 
-### Event Objective
+### Event Purpose
 
-The competitive gaming event was designed to provide a fresh experience while maintaining the spirit of learning and sharing knowledge about Amazon Web Services (AWS) cloud computing.
+The "Cloud Architect" competition was organized to create a practical environment for exchange and hands-on experience, while also testing and strengthening expertise in Amazon Web Services (AWS) cloud system architecture.
 
 ### Team Members
 
-Team **Five Great Heroes (Ngũ Đại Hiệp)**
+Team **Five Great Heroes**
 - Tran Hong Quang
 - Truong Gia Hao (Team Leader)
 - Luong Tuan Giai
 - Luong Cam Dao
 - Le Ngoc Anh Huy
 
-### Event Highlights
+### Highlights of the Event
 
 #### Description
 
-- Two teams compete head-to-head, answering questions from various question sets ranging from easy to difficult. The team with the highest score advances to the next round.
-- If both teams tie at the end, a tie-breaker question will be asked, and the team that answers the fastest wins.
-- Questions revolve around Cloud computing and architectural design concepts.
+- Two teams competed against each other, answering questions from different sets of questions, from easy to difficult. The team with the higher score advanced to the next round.
+- If both teams ended with the same score, a tiebreaker question was asked, and the team that answered faster won.
+- The questions were related to cloud computing and architectural design knowledge.
 
-#### Participation Scale
+#### Number of Participants
 
-- 8 teams - Each team must consist of 5 members.
-- Members do not necessarily have to be from the same internship group; participants could invite others to form a team.
+- 8 teams - each team had 5 members.
+- It was not necessary for members to be from the same internship group; participants could invite others to join a team.
 
-#### Game Show Skills
+#### Skills Used in the Game Show
 
-- **Minimum Risk** (1 use): Teams can use this skill for uncertain answers. If incorrect, no points are deducted; if correct, only 1/2 of the question's points are awarded.
-- **Star of Hope** (1 use): Teams can use this skill for their most confident answer. If correct, points are doubled (x2); if incorrect, points are deducted by double (x2).
+- **Minimum Risk** (1 use): The team could use this skill for uncertain answers. If the answer was wrong, no points were deducted; if correct, only half of the points for that question were awarded.
+- **Star of Hope** (1 use): The team could use this skill for the most confident answer. If correct, the points were doubled; if wrong, the points were deducted by double.
 
-### What Was Learned
+### What I Learned
 
 #### Technical Knowledge
 
-- **Research and Preparation**: Utilized various methods such as reference materials and synthesizing mind maps from multiple sources.
-- **Comprehensive Review**: Reviewed numerous quiz sets regarding Cloud Architect and Solutions Architect roles to expand knowledge and experience.
+- **In-depth research**: The event gave participants the opportunity to access and synthesize materials from multiple reputable sources, building mind maps to classify AWS services according to service models such as IaaS, PaaS, and SaaS.
+- **Practice with exam-style questions**: It helped review many real-world scenarios related to professional certifications such as AWS Certified Solutions Architect (Associate/Professional) and AWS Certified Cloud Practitioner.
+- **Reinforcement of key topics**:
+  - Designing highly available and fault-tolerant systems.
+  - Cost optimization using solutions such as EC2 Spot Instances, S3 Storage Classes, and Auto Scaling.
+  - Security principles and access management (IAM, Security Groups, VPC Architecture).
 
 #### Strategic Thinking
 
-- **Filtering**: Selected team members based on knowledge, attitude, and collaborative experience.
-- **Empowering Choice**: Gave members a sense of ownership rather than coercion.
-- **Bait Strategy**: Set hesitation traps to lure opponents into giving incorrect answers or misusing assistance options.
+- **Selecting and allocating resources**: Building a team based on technical ability, working style, and complementary strengths among members.
+- **Critical reasoning**: Improving the ability to think critically when facing distractors in architecture quiz questions.
+- **Decision-making**: Strengthening the ability to analyze quickly, discuss in a short time, and make strategic decisions using tools such as Star of Hope or Minimum Risk under time pressure.
 
-### Event Experience
+### Experience from the Event
 
-Participating in the **"Cloud Architect"** game show was a rewarding experience, helping me solidify my knowledge and prepare for AWS certifications such as Cloud Practitioner and SAA. Key experiences include:
+Participating in the "Cloud Architect" event was a valuable practical stepping stone, helping me test my self-learning ability and build a strong foundation for pursuing AWS international certifications.
 
-#### Competition and Contest Experience
-- The competition created an exciting atmosphere that stimulated teamwork and quick reflexes when facing challenging cloud architecture questions.
-- It helped systematize AWS knowledge through direct knockout rounds.
-
-#### Key Takeaways
-- Thorough preparation of foundational knowledge and team spirit are the keys to achieving great results in tech competitions.
-- Enhanced the ability to work under time pressure and make quick decisions alongside teammates.
-
-#### Event Photos
+#### Some Photos from the Event
 ![Event Photo](/images/4-EventParticipated/image001.jpg)
 
-> Overall, the event was not only a healthy entertainment playground but also helped me review technical knowledge, practice strategic thinking, and strengthen teamwork skills.
+> Overall, the event was not only a healthy and enjoyable competition, but also helped me review technical knowledge, strengthen strategic thinking, and build stronger teamwork spirit in professional work.

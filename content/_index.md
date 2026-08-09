@@ -6,10 +6,11 @@ chapter: false
 ---
     
 # Internship Report
-### Student Information:
+
+### Student Information
 &emsp; **Full Name:** Truong Gia Hao
 
-&emsp; **Phone Number:** 0898759914 
+&emsp; **Phone Number:** 0898759914
 
 &emsp; **Email:** truonggiahao24@gmail.com
 
@@ -19,20 +20,20 @@ chapter: false
 
 &emsp; **Class:** DCT1225
 
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
+&emsp; **Internship Company:** Amazon Web Services Vietnam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 24/06/2026 to 12/08/2026
+&emsp; **Internship Duration:** From 24/06/2026 to 15/08/2026
 
 ![Hao's profile picture](/images/giahao_avatar.png)
 
 ### Report Content
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Blogs Posted](3-BlogsPosted/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-Evaluation](6-Self-evaluation/)
+7. [Sharing and Feedback](7-Feedback/)

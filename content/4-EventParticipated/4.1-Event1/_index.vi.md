@@ -10,7 +10,7 @@ pre: " <b> 4.1. </b> "
 
 ### Mục Đích Của Sự Kiện
 
-Sự kiện thi đấu ra đời nhằm mang lại trải nghiệm mới mẻ nhưng vẫn giữ tinh thần học hỏi và chia sẻ kiến thức điện toán Amazon Web Service. 
+Sự kiện thi đấu chuyên đề “Cloud Architect” được tổ chức nhằm tạo môi trường giao lưu, cọ xát thực tế, đồng thời kiểm tra và củng cố năng lực chuyên môn về kiến trúc hệ thống điện toán đám mây Amazon Web Services (AWS).
 
 ### Danh sách thành viên
 
@@ -44,26 +44,22 @@ Sự kiện thi đấu ra đời nhằm mang lại trải nghiệm mới mẻ nh
 
 #### Kiến thức Kỹ Thuật
 
-- **Tìm hiểu và chuẩn bị** trước bằng nhiều phương pháp như tham khảo tài liệu, tổng hợp mindmap từ nhiều nguồn khác nhau.
-- **Tổng ôn nhiều bộ đề quiz** về Cloud Architect, Solution Architect,... để gia tăng kiến thức và kinh nghiệm.
+- **Nghiên cứu tài liệu chuyên sâu:** Sự kiện mang lại cho người tham gia cơ hội tiếp cận và tổng hợp tài liệu từ nhiều nguồn chính thống, xây dựng hệ thống bản đồ tư duy (Mindmap) để phân loại các dịch vụ AWS theo mô hình phân tầng (IaaS, PaaS, SaaS).
+- **Luyện đề:** Ôn luyện hàng loạt các kịch bản thực tế thuộc các chứng chỉ chuyên nghiệp như AWS Certified Solutions Architect (Associate/Professional) và AWS Certified Cloud Practitioner.
+- **Củng cố các chủ đề trọng tâm:**
+  - Thiết kế hệ thống có tính sẵn sàng cao (High Availability) và khả năng chịu lỗi (Fault Tolerance).
+  - Tối ưu hóa chi phí (Cost Optimization) dựa trên các giải pháp sử dụng EC2 Spot Instances, S3 Storage Classes và Auto Scaling.
+  - Các nguyên tắc bảo mật và quản lý định danh truy cập (IAM, Security Groups, VPC Architecture).
 
 #### Tư Duy Chiến lược
 
-- **Chắt lọc**: Tuyển thành viên dựa trên tiêu chí kiến thức, thái độ và kinh nghiệm hợp tác.
-- **Gợi mở quyền lựa chọn**: Trao cho các thành viên cảm giác làm chủ thay vì ép buộc.
-- **Chiến lược mồi câu**: Bẫy lưỡng lự, dụ dỗ đối thủ đưa ra những đáp án không chính xác, sử dụng quyền trợ giúp thiếu hiệu quả.
+- **Tuyển chọn và phân bổ nguồn lực:** Xây dựng đội hình dựa trên năng lực chuyên môn, phong cách làm việc và tính bổ trợ lẫn nhau giữa các thành viên.
+- **Chiến thuật phản biện:** Nâng cao tư duy phản biện khi đối mặt với các bẫy kỹ thuật (distractors) trong hệ thống câu hỏi trắc nghiệm kiến trúc.
+- **Ra quyết định**: Nâng cao khả năng phân tích nhanh, hội ý nhóm chớp nhoáng và đưa ra quyết định chiến lược (sử dụng Ngôi sao hy vọng hoặc Rủi ro tối thiểu) trong thời gian giới hạn.
 
 ### Trải nghiệm trong event
 
-Tham gia game show **“Cloud Architect”** là một trải nghiệm rất bổ ích, giúp tôi củng cố kiến thức và có thêm hành trang tốt cho việc thi các chứng chỉ AWS như Cloud Practitioner, SAA,... Một số trải nghiệm nổi bật:
-
-#### Trải nghiệm thi đấu và tranh tài
-- Cuộc thi tạo ra bầu không khí hào hứng, kích thích tinh thần đồng đội và khả năng phản xạ nhanh trước các câu hỏi hóc búa về kiến trúc đám mây.
-- Giúp hệ thống hóa lại kiến thức về AWS thông qua các vòng thi đấu đối kháng trực tiếp.
-
-#### Bài học rút ra
-- Sự chuẩn bị kỹ lưỡng về kiến thức nền tảng và tinh thần đồng đội là chìa khóa để đạt kết quả tốt trong các cuộc thi công nghệ.
-- Nâng cao khả năng làm việc dưới áp lực thời gian và đưa ra quyết định nhanh chóng cùng đồng đội.
+Tham gia “Cloud Architect” là một bước đệm thực tế có giá trị cao, giúp kiểm tra năng lực tự học và cung cấp tiền đề vững chắc cho mục tiêu chinh phục các chứng chỉ quốc tế của AWS.
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![Event Photo](/images/4-EventParticipated/image001.jpg)

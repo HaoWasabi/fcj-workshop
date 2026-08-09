@@ -306,4 +306,7 @@ Workshop mang lại nhiều kiến thức thực tiễn, giúp tôi hiểu rõ h
 ### Một số hình ảnh khi tham gia sự kiện
 ![Event Photo 1](/images/4-EventParticipated/image003.jpg)
 
+![Event Photo 2](/images/4-EventParticipated/Event_4_8_pic1.jpg)
+
+
 > **Đánh giá tổng thể:** Ngày 1 của **AWS FCAJ Agent Forge – Deep Dive** đã cung cấp nền tảng vững chắc về **Agentic AI** và **Amazon Bedrock AgentCore**, giúp người tham gia hiểu rõ từ các khái niệm cơ bản đến kiến trúc và cách triển khai AI Agent trong môi trường production. Workshop kết hợp giữa lý thuyết, ví dụ minh họa và các nội dung thực hành, đồng thời nhấn mạnh các yếu tố quan trọng như bảo mật, khả năng mở rộng, quản lý vòng đời và tích hợp công cụ. Đây là một chương trình hữu ích cho những ai muốn xây dựng các hệ thống AI Agent đáp ứng yêu cầu của môi trường doanh nghiệp.

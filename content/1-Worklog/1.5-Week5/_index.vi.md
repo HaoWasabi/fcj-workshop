@@ -1,56 +1,34 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hoàn thành nhiệm vụ CI-001: GitHub Actions CI/CD pipeline theo kế hoạch của Sprint 2.
+- Quy trình làm việc (workflow) được kích hoạt khi đẩy code lên nhánh chính (main)
+- Xác thực OIDC hoạt động (không sử dụng khóa cứng trong mã nguồn)
+- Docker image được build và đẩy lên ECR
+- Các bài kiểm thử (test) được thực thi và đạt yêu cầu
+- Yêu cầu phê duyệt đối với nhánh chính (main branch)
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc cần triển khai trong tuần:
 
+| STT | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 1 | - Tiếp nhận và phân tích yêu cầu của Sprint 2 <br> - Nghiên cứu Acceptance Criteria của AWS-004 | 18/07/2026 | 19/07/2026 | <https://aws.amazon.com/vi/ecr/> |
+| 2 | - Tạo tệp quy trình làm việc GitHub Actions (.github/workflows/deploy.yml) <br> - Cấu hình xác thực OIDC (GitHub → AWS) | 18/07/2026 | 19/07/2026 | <https://docs.github.com/en/actions/> |
+| 3 | - Thêm bước build Docker (backend + frontend) </br> - Thêm bước đẩy (push) lên ECR <br> - Thêm bước chạy unit test (Django pytest) <br> - Thêm bước chạy E2E test cho frontend (Playwright)| 19/07/2026 | 20/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Kiểm thử quy trình làm việc trên nhánh tính năng (feature branch) <br> - Thiết lập yêu cầu phê duyệt cho nhánh chính (main branch) <br> - Thêm bước kiểm thử nhanh (smoke test) sau khi triển khai| 19/07/2026 | 20/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Hoàn thiện tài liệu triển khai <br> - Chuẩn bị cho Sprint 3 | 20/07/2026 | 21/07/2026   |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành triển khai và cấu hình Task CI-001 theo yêu cầu của Sprint 2.
+- Hiểu rõ quy trình triển khai và cấu hình tài nguyên AWS liên quan đến task.
+- Kiểm thử thành công và xác nhận tài nguyên hoạt động theo đúng Acceptance Criteria.
+- Hoàn thiện tài liệu hướng dẫn triển khai và ghi nhận các vấn đề phát sinh trong quá trình thực hiện.
+- Sẵn sàng chuyển sang các nhiệm vụ tiếp theo của Sprint sau khi hoàn thành CI-001.

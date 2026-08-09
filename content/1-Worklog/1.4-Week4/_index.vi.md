@@ -1,7 +1,7 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-07-13
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
@@ -9,48 +9,26 @@ pre: " <b> 1.4. </b> "
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Hoàn thành nhiệm vụ AWS-004: Thiết lập Docker + ECR theo kế hoạch của Sprint 1.
+- Các kho lưu trữ ECR đã được tạo và có thể truy cập được
+- Các Dockerfile tuân thủ các quy tắc thực hành tốt nhất
+- Quá trình build image thành công
+- Quá trình pull image từ ECR không gặp lỗi
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc cần triển khai trong tuần:
 
+| STT | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 1 | - Tiếp nhận và phân tích yêu cầu của Sprint 1 <br> - Nghiên cứu Acceptance Criteria của AWS-004 | 14/07/2026 | 15/07/2026 | <https://aws.amazon.com/vi/ecr/> |
+| 2 | - Tạo các repository ECR (backend, frontend) <br> - Kiểm tra việc đăng nhập ECR từ máy cục bộ | 14/07/2026 | 15/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Build Docker image cho backend (Django + Gunicorn) <br> - Build Docker image cho frontend (React + Nginx) | 14/07/2026 | 15/07/2026 | <https://docs.docker.com/> |
+| 4 | - Push các image thử nghiệm lên ECR <br> - Kiểm tra việc pull image từ ECR <br> - Thiết lập chính sách vòng đời (lifecycle policies) cho ECR| 15/07/2026 | 16/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Hoàn thiện tài liệu triển khai <br> - Chuẩn bị cho Sprint 2 | 15/07/2026 | 17/07/2026   |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành triển khai và cấu hình Task AWS-004 theo yêu cầu của Sprint 1.
+- Hiểu rõ quy trình triển khai và cấu hình tài nguyên AWS liên quan đến task.
+- Kiểm thử thành công và xác nhận tài nguyên hoạt động theo đúng Acceptance Criteria.
+- Hoàn thiện tài liệu hướng dẫn triển khai và ghi nhận các vấn đề phát sinh trong quá trình thực hiện.
+- Sẵn sàng chuyển sang các nhiệm vụ tiếp theo của Sprint sau khi hoàn thành AWS-004.

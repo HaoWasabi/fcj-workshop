@@ -1,7 +1,7 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+date: 2026-06-29
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
@@ -9,48 +9,24 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tìm hiểu quy trình CI/CD và ứng dụng của nó trong dự án trên AWS.
+- Nắm được cách hoạt động của GitHub Actions.
+- Làm quen với Docker, Amazon ECS và Amazon ECR trong triển khai ứng dụng.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc cần triển khai trong tuần:
 
+| STT | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 1 | - Tìm hiểu Continuous Integration (CI) <br> - Nghiên cứu Continuous Delivery và Continuous Deployment | 29/06/2026 | 29/06/2026 | |
+| 2 | - Tìm hiểu GitHub Actions <br> - Nghiên cứu Workflow, Runner, Job và Action | 30/06/2026 | 30/06/2026 | <https://docs.github.com/en/actions> |
+| 3 | - Nghiên cứu Docker Image, Container và Dockerfile <br> - Thực hành build và chạy ứng dụng bằng Docker | 01/07/2026 | 01/07/2026 | <https://docs.docker.com/> |
+| 4 | - Tìm hiểu Amazon ECS và Amazon ECR <br> - Nghiên cứu quy trình lưu trữ và triển khai container trên AWS | 02/07/2026 | 02/07/2026 | <https://docs.aws.amazon.com/ecs/> |
+| 5 | - Tổng hợp kiến thức về Docker, ECS, ECR và GitHub Actions <br> - Xây dựng sơ đồ tổng quan quy trình CI/CD | 03/07/2026 | 03/07/2026 | |
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hiểu quy trình CI/CD trong phát triển phần mềm hiện đại.
+- Nắm được cách GitHub Actions giúp tự động hóa quá trình build và triển khai.
+- Hiểu rõ vai trò của Docker trong đóng gói ứng dụng và lưu trữ image.
+- Có cái nhìn tổng quan về Amazon ECS và Amazon ECR trong triển khai container trên AWS.
+- Xây dựng nền tảng kiến thức để kết hợp CI/CD với hệ thống cloud thực tế.

@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
+### IAM permissions
 Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.
 ```
 {
@@ -216,7 +216,7 @@ Gắn IAM permission policy sau vào tài khoản aws user của bạn để tri
 
 ```
 
-#### Khởi tạo tài nguyên bằng CloudFormation
+### Khởi tạo tài nguyên bằng CloudFormation
 
 Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).
 
@@ -240,3 +240,5 @@ Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thà
 + 3 EC2s đã được tạo
 
 ![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+
+
