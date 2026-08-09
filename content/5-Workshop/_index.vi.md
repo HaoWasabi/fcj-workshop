@@ -1,12 +1,12 @@
 ---
-title: "5. Workshop"
+title: "Workshop"
 date: 2024-01-01
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# NeonFoodMap - Triển khai ứng dụng Cloud-Native trên AWS
+# DevOps on AWS with NeonFoodmap - Foodmap Website
 
 ### Tổng quan
 

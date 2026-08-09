@@ -40,9 +40,9 @@ CloudWatch (Logs & Metrics) → Auto Scaling → AWS Budgets → Amazon SNS → 
 
 ![](/images/2-Proposal/diagram1.png)
 
-#### Kiến trúc hệ thống được chia thành năm lớp chính:
+Kiến trúc hệ thống được chia thành năm lớp chính:
 
-**CI/CD Layer**
+#### CI/CD Layer
 
 Bao gồm:
 
@@ -62,7 +62,7 @@ Bao gồm:
 6. ECS Service thực hiện Rolling Deployment.
 
 
-**Presentation Layer**
+#### Presentation Layer
 
 Bao gồm:
 
@@ -76,7 +76,7 @@ Frontend được lưu trữ trên Amazon S3 và phân phối thông qua CloudFr
 - Giảm tải Backend
 
 
-**Application Layer**
+#### Application Layer
 
 Bao gồm:
 
@@ -92,7 +92,7 @@ Bao gồm:
 - Tự động khởi động lại khi lỗi
 
 
-**Data Layer**
+#### Data Layer
 
 Bao gồm:
 
@@ -108,7 +108,7 @@ Việc sử dụng Multi-AZ giúp:
 - Giảm thời gian gián đoạn dịch vụ
 
 
-**Monitoring Layer**
+#### Monitoring Layer
 
 Bao gồm:
 

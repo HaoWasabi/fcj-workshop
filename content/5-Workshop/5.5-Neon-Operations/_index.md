@@ -1,13 +1,9 @@
 ---
-title : "NeonFoodMap Operations and Monitoring"
+title : "Testing, Operations, and Continuous Deployment"
 date : 2024-01-01
 weight : 5
 chapter : false
 pre : " <b> 5.5. </b> "
----
-
----
-
 ---
 
 ### Objectives
@@ -26,8 +22,6 @@ The main objectives include:
 * Testing error scenarios and Responsive behavior on Mobile and Desktop devices.
 * Cleaning up unused AWS resources to minimize unnecessary costs.
 
----
-
 ### Overview
 
 The NeonFoodMap system operation process consists of the following main stages:
@@ -40,7 +34,6 @@ The NeonFoodMap system operation process consists of the following main stages:
 6. Perform End-to-End Testing for key flows such as registration, login, POI browsing, audio playback, tour booking, and payment.
 7. Test error scenarios, Responsive behavior, and clean up resources when necessary.
 
----
 
 ### Deployment Conclusion
 
@@ -61,5 +54,3 @@ The main results achieved include:
 * After completing the practice, unused AWS resources can be cleaned up to prevent unnecessary costs.
 
 If the environment is no longer required, cleanup can be performed in an appropriate order, including unused ECS Services, Task Definitions, ALB, Target Groups, CloudFront Distribution, CloudWatch Alarms/Dashboards, Log Groups, and ECR Repositories.
-
----

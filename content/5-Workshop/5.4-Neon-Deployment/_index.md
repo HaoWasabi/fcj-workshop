@@ -1,5 +1,5 @@
 ---
-title : "NeonFoodMap Deployment on AWS"
+title : "Deploying NeonFoodMap on AWS"
 date : 2024-01-01
 weight : 4
 chapter : false

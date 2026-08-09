@@ -15,9 +15,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ đáp ứng các yêu cầu 
 - Kích hoạt **VPC Flow Logs** để giám sát lưu lượng mạng trong VPC
 - Kiểm tra khả năng thu thập và phân tích Log
 
----
-
-### 5.5.5.2. Các bước thực hiện
+### 5.5.5.1. Các bước thực hiện
 
 #### Bước 1. Thiết lập thời gian lưu trữ Log (Retention Policy)
 
