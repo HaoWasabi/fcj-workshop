@@ -6,9 +6,9 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
+Công ty TNHH Amazon Web Services Việt Nam thường tổ chức nhiều buổi workshop event hằng tuần nhằm phổ cập kiến thức Điện toán đám mây, Trí tuệ nhân tạo cũng như những chia sẻ về kinh nghiệm, lộ trình phát triển sự nghiệp. Các buổi event còn mở ra cơ hội giao lưu, kết nối các chuyên gia, doanh nghiệp với sinh viên.
 
-
-Trong quá trình thực tập, em đã tham gia 4 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+Trong suốt quá trình thực tập tại Công ty, em đã tham gia 04 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là những món quà và khoảnh khắc tuyệt vời.
 
 
 

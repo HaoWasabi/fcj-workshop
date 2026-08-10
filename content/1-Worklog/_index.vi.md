@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Kỳ thực tập của tôi kéo dài 8 tuần, từ 22/06/2026 đến 15/08/2026. Xuyên suốt 8 tuần, tôi vừa học các dịch vụ AWS nền tảng, vừa áp dụng trực tiếp vào việc xây dựng đồ án.
+Kỳ thực tập của em kéo dài 8 tuần, từ 22/06/2026 đến 15/08/2026. Xuyên suốt 8 tuần, em vừa học các dịch vụ AWS nền tảng, vừa áp dụng trực tiếp vào việc xây dựng đồ án.
 
 **Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS, khảo sát đề tài sẽ thực hiện triển khai](1.1-week1/)
 

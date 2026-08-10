@@ -64,4 +64,4 @@ Tham gia “Cloud Architect” là một bước đệm thực tế có giá tr�
 #### Một số hình ảnh khi tham gia sự kiện
 ![Event Photo](/images/4-EventParticipated/image001.jpg)
 
-> Tổng thể, sự kiện không chỉ là sân chơi giải trí lành mạnh mà còn giúp tôi ôn tập lại kiến thức kỹ thuật, rèn luyện tư duy chiến lược và thắt chặt tinh thần đồng đội trong công việc.
+> Tổng thể, sự kiện không chỉ là sân chơi giải trí lành mạnh mà còn giúp em ôn tập lại kiến thức kỹ thuật, rèn luyện tư duy chiến lược và thắt chặt tinh thần đồng đội trong công việc.

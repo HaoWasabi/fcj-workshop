@@ -269,7 +269,7 @@ Các nội dung thực hành gồm:
 
 ## Những Gì Học Được
 
-Sau khi tham gia workshop, tôi đã tiếp thu được nhiều kiến thức về Agentic AI và Amazon Bedrock AgentCore, bao gồm:
+Sau khi tham gia workshop, em đã tiếp thu được nhiều kiến thức về Agentic AI và Amazon Bedrock AgentCore, bao gồm:
 
 ### Kiến Thức Chuyên Môn
 
@@ -295,13 +295,13 @@ Sau khi tham gia workshop, tôi đã tiếp thu được nhiều kiến thức v
 
 ## Trải Nghiệm Trong Workshop
 
-Tham gia **Ngày 1 của AWS FCAJ Agent Forge – Deep Dive** giúp tôi có cái nhìn tổng quan về cách xây dựng và vận hành AI Agent trong môi trường doanh nghiệp.
+Tham gia **Ngày 1 của AWS FCAJ Agent Forge – Deep Dive** giúp em có cái nhìn tổng quan về cách xây dựng và vận hành AI Agent trong môi trường doanh nghiệp.
 
-Thông qua phần trình bày của diễn giả và các nội dung minh họa, tôi hiểu rõ hơn về quy trình hoạt động của AI Agent, từ việc phân tích yêu cầu, lập kế hoạch, sử dụng công cụ đến hoàn thành mục tiêu. Workshop cũng giúp tôi tiếp cận kiến trúc **Amazon Bedrock AgentCore** và các thành phần quan trọng như Runtime, Gateway và Identity.
+Thông qua phần trình bày của diễn giả và các nội dung minh họa, em hiểu rõ hơn về quy trình hoạt động của AI Agent, từ việc phân tích yêu cầu, lập kế hoạch, sử dụng công cụ đến hoàn thành mục tiêu. Workshop cũng giúp em tiếp cận kiến trúc **Amazon Bedrock AgentCore** và các thành phần quan trọng như Runtime, Gateway và Identity.
 
-Bên cạnh phần lý thuyết, tôi được tìm hiểu các ví dụ thực tế về ứng dụng AI Agent trong tự động hóa quy trình, hỗ trợ khách hàng và phát triển phần mềm. Tôi cũng học được một số kỹ thuật Prompt Engineering, cách tối ưu workflow, cũng như các nguyên tắc bảo mật và triển khai AI Agent trong môi trường production.
+Bên cạnh phần lý thuyết, em được tìm hiểu các ví dụ thực tế về ứng dụng AI Agent trong tự động hóa quy trình, hỗ trợ khách hàng và phát triển phần mềm. Em cũng học được một số kỹ thuật Prompt Engineering, cách tối ưu workflow, cũng như các nguyên tắc bảo mật và triển khai AI Agent trong môi trường production.
 
-Workshop mang lại nhiều kiến thức thực tiễn, giúp tôi hiểu rõ hơn về xu hướng phát triển của Agentic AI và tạo nền tảng để tiếp tục nghiên cứu các nội dung chuyên sâu trong những buổi workshop tiếp theo.
+Workshop mang lại nhiều kiến thức thực tiễn, giúp em hiểu rõ hơn về xu hướng phát triển của Agentic AI và tạo nền tảng để tiếp tục nghiên cứu các nội dung chuyên sâu trong những buổi workshop tiếp theo.
 
 ### Một số hình ảnh khi tham gia sự kiện
 ![Event Photo 1](/images/4-EventParticipated/image003.jpg)

@@ -6,13 +6,13 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Công ty TNHH AWS Việt Nam** thông qua chương trình **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** từ **24/06/2026** đến **15/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
+Trong suốt thời gian thực tập tại **Công ty TNHH AWS Việt Nam** thông qua chương trình **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** từ **24/06/2026** đến **15/08/2026**, em đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
 
-Tôi cùng các thành viên trong nhóm đã tham gia dự án **DevOps on AWS with NeonFoodMap (Website bản đồ ẩm thực)**, qua đó cải thiện kỹ năng Cloud Computing, kỹ năng triển khai dịch vụ AWS, đọc hiểu tài liệu kỹ thuật, thiết kế kiến trúc theo AWS Well-Architected Framework, làm việc nhóm, quản lý tiến độ, trình bày báo cáo và giải quyết các vấn đề phát sinh trong quá trình triển khai.
+Em cùng các thành viên trong nhóm đã tham gia dự án **DevOps on AWS with NeonFoodMap (Website bản đồ ẩm thực)**, qua đó cải thiện kỹ năng Cloud Computing, kỹ năng triển khai dịch vụ AWS, đọc hiểu tài liệu kỹ thuật, thiết kế kiến trúc theo AWS Well-Architected Framework, làm việc nhóm, quản lý tiến độ, trình bày báo cáo và giải quyết các vấn đề phát sinh trong quá trình triển khai.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+Về tác phong, em luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Để phản ánh một cách khách quan quá trình thực tập, em xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
 
 | STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |

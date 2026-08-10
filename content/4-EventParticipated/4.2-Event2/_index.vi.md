@@ -88,11 +88,11 @@ pre: " <b> 4.2. </b> "
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“Community Day June 2026”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng bằng các phương pháp và công cụ AI hiện đại. Một số trải nghiệm nổi bật:
+Tham gia workshop **“Community Day June 2026”** là một trải nghiệm rất bổ ích, giúp em có cái nhìn toàn diện về cách hiện đại hóa ứng dụng bằng các phương pháp và công cụ AI hiện đại. Một số trải nghiệm nổi bật:
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
 - Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn về tác động của các công cụ AI và tự động hóa đối với **ngành kỹ thuật hạ tầng (Cloud Engineering)** cũng như giới hạn của chúng trước tư duy con người.
+- Qua các case study thực tế, em hiểu rõ hơn về tác động của các công cụ AI và tự động hóa đối với **ngành kỹ thuật hạ tầng (Cloud Engineering)** cũng như giới hạn của chúng trước tư duy con người.
 
 #### Trải nghiệm kỹ thuật thực tế
 - Tiếp thu các giải pháp giải quyết bài toán phức tạp hệ thống (**system complexity**) khi doanh nghiệp mở rộng quy mô.
@@ -105,7 +105,7 @@ Tham gia workshop **“Community Day June 2026”** là một trải nghiệm r�
 
 #### Kết nối và trao đổi
 - Sự kiện tạo cơ hội giao lưu, kết nối với cộng đồng công nghệ AWS và trao đổi trực tiếp qua phần hỏi đáp tương tác cao với các chuyên gia.
-- Qua các chia sẻ thực tế, tôi nhận ra tầm quan trọng của việc kết hợp chặt chẽ giữa các giải pháp hạ tầng kỹ thuật và mục tiêu vận hành của doanh nghiệp, thay vì chỉ tập trung thuần túy vào công nghệ.
+- Qua các chia sẻ thực tế, em nhận ra tầm quan trọng của việc kết hợp chặt chẽ giữa các giải pháp hạ tầng kỹ thuật và mục tiêu vận hành của doanh nghiệp, thay vì chỉ tập trung thuần túy vào công nghệ.
 
 #### Bài học rút ra
 - AI là trợ thủ đắc lực trong việc tối ưu hóa chi phí (FinOps) và hỗ trợ vận hành, nhưng không thể thay thế hoàn toàn vai trò quyết định chiến lược của con người.
@@ -116,4 +116,4 @@ Tham gia workshop **“Community Day June 2026”** là một trải nghiệm r�
 ![Event Photo 1](/images/4-EventParticipated/image002.jpg)
 ![Event Photo 2](/images/4-EventParticipated/image002a.png)
 
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp em thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

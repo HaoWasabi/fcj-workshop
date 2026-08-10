@@ -25,7 +25,7 @@ Trong vài năm trở lại đây, điện toán đám mây (Cloud Computing) đ
 
 Mình cũng đặt câu hỏi: "Liệu mình có phải học thuộc tất cả những dịch vụ này không?" Sau cùng, câu trả lời của mình là không.
 
-Điều giúp mình tiếp cận AWS nhanh hơn không phải là khả năng ghi nhớ tên dịch vụ, mà chính là những kiến thức nền tảng tôi đã học trước đó: System Design, API, Networking, Cơ sở dữ liệu, Hệ điều hành và các nguyên lý xây dựng hệ thống. Việc ánh xạ từng kiến thức nền tảng vào các use case của từng dịch vụ giúp mình học tập và áp dụng vào kiến trúc dễ dàng hơn bao giờ hết.
+Điều giúp mình tiếp cận AWS nhanh hơn không phải là khả năng ghi nhớ tên dịch vụ, mà chính là những kiến thức nền tảng em đã học trước đó: System Design, API, Networking, Cơ sở dữ liệu, Hệ điều hành và các nguyên lý xây dựng hệ thống. Việc ánh xạ từng kiến thức nền tảng vào các use case của từng dịch vụ giúp mình học tập và áp dụng vào kiến trúc dễ dàng hơn bao giờ hết.
 
 
 ## AWS Không dạy bạn một khái niệm mới

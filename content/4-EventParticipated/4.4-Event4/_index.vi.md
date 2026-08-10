@@ -95,9 +95,9 @@ Hệ thống hỗ trợ hai hình thức đánh giá. **On-demand** phù hợp v
 
 ## Trải Nghiệm Trong Workshop
 
-Tham gia **Ngày 2 của AWS FCAJ Agent Forge – Deep Dive** giúp tôi có cái nhìn tổng quan về cách xây dựng và vận hành AI Agent trong môi trường doanh nghiệp.
+Tham gia **Ngày 2 của AWS FCAJ Agent Forge – Deep Dive** giúp em có cái nhìn tổng quan về cách xây dựng và vận hành AI Agent trong môi trường doanh nghiệp.
 
-Thông qua phần trình bày của diễn giả và các nội dung thực hành, tôi hiểu rõ hơn cách để tạo ra một AI Agent hiệu quả bằng việc cung cấp cho hệ thống cơ chế lưu trữ tri thức, giám sát, đánh giá chất lượng và bảo mật chặt chẽ.
+Thông qua phần trình bày của diễn giả và các nội dung thực hành, em hiểu rõ hơn cách để tạo ra một AI Agent hiệu quả bằng việc cung cấp cho hệ thống cơ chế lưu trữ tri thức, giám sát, đánh giá chất lượng và bảo mật chặt chẽ.
 
 ### Một số hình ảnh khi tham gia sự kiện
 ![Event Photo 1](/images/4-EventParticipated/image004.jpg)

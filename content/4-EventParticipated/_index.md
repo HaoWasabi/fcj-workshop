@@ -6,7 +6,9 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-During my internship, I participated in several events that were valuable opportunities to gain practical knowledge, strengthen professional skills, and connect with the community. Each event helped me expand my understanding of cloud technology, teamwork, and the practical application of AWS concepts.
+Amazon Web Services Vietnam Company Limited frequently organizes weekly workshops designed to disseminate knowledge about cloud computing and artificial intelligence, as well as to share insights on professional experiences and career development paths. These events also create opportunities for students to network and connect with industry experts and businesses.
+
+During my internship at the company, I participated in four events; each one was a memorable experience that offered valuable new knowledge, along with wonderful gifts and great moments.
 
 ### [Event 1](4.1-Event1/)
 &emsp;**Event Name:** Cloud Architect
