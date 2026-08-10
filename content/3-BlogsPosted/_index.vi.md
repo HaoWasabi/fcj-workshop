@@ -15,4 +15,4 @@ Blog này giới thiệu Amazon Kiro với tính năng Powers, cho phép bạn �
 Blog này giới thiệu cách tự động bật và tắt Amazon RDS theo lịch bằng AWS Systems Manager Maintenance Windows thay cho việc tự xây dựng Lambda và gọi API thủ công, giúp tối ưu chi phí cho các môi trường development, testing hoặc staging không cần hoạt động 24/7. 
 
 ###  [Blog 3 - KIẾN THỨC NỀN TẢNG – BỆ PHÓNG VỮNG CHẮC ĐỂ CHINH PHỤC ĐIỆN TOÁN ĐÁM MÂY](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Blog này chia sẻ góc nhìn cá nhân về việc nền tảng kiến ​​thức vững chắc trong các lĩnh vực như Thiết kế hệ thống (System Design), Mạng (Networking), API và Cơ sở dữ liệu đã giúp quá trình học AWS trở nên nhanh chóng và trực quan hơn. 
