@@ -24,7 +24,7 @@ chapter: false
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 24/06/2026 to 15/08/2026
+&emsp; **Internship Duration:** From 22/06/2026 to 15/08/2026
 
 ![Hao's profile picture](/images/giahao_avatar.png)
 
