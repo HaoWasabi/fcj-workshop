@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
-
 ###  [Blog 1 - KIRO POWERS](3.1-Blog1/)
 Blog này giới thiệu Amazon Kiro với tính năng Powers, cho phép bạn đóng gói toàn bộ công cụ, hướng dẫn và tự động hóa thành một đơn vị duy nhất, rồi chia sẻ cho cả team thay vì cấu hình thủ công mỗi khi mở dự án mới. Đây là bước tiến giúp nhóm dùng AI chung một thiết lập, đồng thời giải quyết bài toán lãng phí token và giảm độ tập trung của AI.
 
