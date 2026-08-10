@@ -14,11 +14,11 @@ Items to check:
 
 - Frontend target group transitions to `Healthy`
 
-![alt text](image-1.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image051.png)
 
 - Backend target group transitions to `Healthy`
 
-![alt text](image.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image050.png)
 
 - The ALB DNS is accessible via browser
 ```
@@ -30,4 +30,4 @@ http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/map
 http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/api/
 ```
 
-![alt text](image-2.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image052.png)

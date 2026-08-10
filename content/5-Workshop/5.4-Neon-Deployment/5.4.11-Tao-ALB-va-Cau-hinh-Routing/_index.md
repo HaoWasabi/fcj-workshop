@@ -19,7 +19,9 @@ pre : " <b> 5.4.11. </b> "
    - HTTPS `443` from `0.0.0.0/0`
 5. Keep the default outbound rule.
 
-![Figure 11. Create ALB security group](/images/5-Workshop/5.4-neon-deployment/placeholder-alb-sg.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image044.png)
+
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image045.png)
 
 ### 5.4.11.2. Create Target Groups for Frontend and Backend
 
@@ -41,8 +43,6 @@ Key configurations:
 ![](/images/5-Workshop/5.4-Neon-Deployment/image027.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image028.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image029.png)
-
-![Figure 12. Create target group](/images/5-Workshop/5.4-neon-deployment/placeholder-target-group.png)
 
 ### 5.4.11.3. Create Application Load Balancer
 
@@ -71,6 +71,9 @@ Key configurations:
 ### 5.4.11.4. Create Listener Rule for API Path
 
 1. Open ALB → **Listeners and rules**.
+
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image046.png)
+
 2. Select the `HTTP:80` listener.
 3. Add a rule:
    - Name: `route-backend-api`

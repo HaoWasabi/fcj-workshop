@@ -24,7 +24,8 @@ To allow ECS to automatically register tasks into the target group, configure lo
 
 Results:
 - Backend
-![alt text](image.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image048.png)
 
 - Frontend
-![alt text](image-1.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image049.png)
+

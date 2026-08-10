@@ -19,9 +19,9 @@ pre : " <b> 5.4.11. </b> "
    - HTTPS `443` từ `0.0.0.0/0`
 5. Giữ outbound rule mặc định.
 
-![alt text](image.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image044.png)
 
-![alt text](image-1.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image045.png)
 
 
 #### 5.4.11.2. Tạo target group cho frontend và backend
@@ -67,7 +67,7 @@ Các cấu hình chính:
 
 1. Mở ALB → Listeners and rules.
 
-![alt text](image-2.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image046.png)
 
 2. Chọn listener `HTTP:80`.
 3. Thêm rule:
@@ -76,4 +76,14 @@ Các cấu hình chính:
    - Action: Forward tới target group backend
 4. Lưu rule.
 
-![alt text](image-3.png)
+![](/images/5-Workshop/5.4-Neon-Deployment/image038.png)
+
+![Figure 84.](/images/5-Workshop/5.5-Neon-Operations/image084.png)
+
+![Figure 85.](/images/5-Workshop/5.5-Neon-Operations/image085.png)
+
+![Figure 86.](/images/5-Workshop/5.5-Neon-Operations/image086.png)
+
+![Figure 87.](/images/5-Workshop/5.5-Neon-Operations/image087.png)
+
+![Figure 83.](/images/5-Workshop/5.5-Neon-Operations/image083.png)
