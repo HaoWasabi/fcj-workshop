@@ -9,24 +9,26 @@ pre: " <b> 1.1. </b> "
 ### Week 1 Objectives:
 
 - Get acquainted with the internship program and working process.
-- Understand the fundamentals of AWS and its core service categories.
-- Set up the environment required for learning and hands-on practice.
+- Explore the fundamental AWS services.
+- Set up the learning environment and basic hands-on practice.
 
 ### Tasks to be carried out this week:
 
-| Day | Task | Start Date | Completion Date | Reference Material |
+| No. | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Attend the internship orientation session <br> - Review the program goals, rules, and learning workflow | 22/06/2026 | 22/06/2026 | |
-| 3 | - Study AWS service categories <br> - Understand IAM, EC2, S3, and related services | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Create an AWS Free Tier account <br> - Explore the AWS Management Console and AWS CLI | 24/06/2026 | 24/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Learn EC2 basics <br> - Study SSH access methods and Elastic IP | 25/06/2026 | 25/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - Practice launching an EC2 instance <br> - Connect via SSH and attach an EBS volume | 26/06/2026 | 26/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 1 | - Understand the program goals, regulations, and learning plan | 22/06/2026 | 22/06/2026 | |
+| 2 | - Study core AWS services <br> - Learn about IAM, EC2, S3, and the Cloud Computing model | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com> |
+| 3 | - Create an AWS Free Tier account <br> - Get familiar with the AWS Console and AWS CLI | 24/06/2026 | 24/06/2026 | <https://cloudjourney.awsstudygroup.com> |
+| 4 | - Learn EC2 basics <br> - Study SSH access methods and Elastic IP | 25/06/2026 | 25/06/2026 | <https://cloudjourney.awsstudygroup.com> |
+| 5 | - Practice creating and connecting to an EC2 instance <br> - Attach an EBS volume and verify it works | 26/06/2026 | 26/06/2026 | <https://cloudjourney.awsstudygroup.com> |
+| 6 | - Install Kiro IDE and AWS CLI | 26/06/2026 | 26/06/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c> |
 
 ### Week 1 Achievements:
 
-- Gained a clear understanding of AWS and its major service groups, including compute, storage, networking, and database.
-- Successfully created and configured an AWS Free Tier account.
-- Became familiar with the AWS Management Console and learned how to navigate the platform efficiently.
-- Installed and configured AWS CLI on the local machine with the required credentials and region settings.
-- Practiced basic AWS CLI operations such as checking account configuration, listing regions, and viewing EC2 resources.
-- Built a solid foundation for continuing hands-on learning in the upcoming weeks.
+- Understood the main AWS service groups and how they work.
+- Successfully created and completed the initial setup of an AWS Free Tier account.
+- Learned how to navigate the AWS Management Console and use AWS CLI.
+- Installed and configured AWS CLI with the appropriate credentials and region settings.
+- Practiced basic commands to check EC2 resources and account configuration.
+- Installed and got familiar with Kiro IDE for the learning process.
+- Built the foundational knowledge needed to continue learning and practicing in the upcoming weeks.

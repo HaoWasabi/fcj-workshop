@@ -8,24 +8,27 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-- Complete Task AWS-005 according to the Sprint 2 plan.
-- Complete Task FRONTEND-001 by building and containerizing the frontend application.
-- Prepare the environment so the frontend can be deployed on AWS infrastructure.
+Complete Task CI-001: GitHub Actions CI/CD pipeline according to the Sprint 2 plan.
+- Workflow is triggered on push to the main branch
+- OIDC authentication works (no hardcoded keys in source code)
+- Docker image is built and pushed to ECR
+- Tests are executed and pass
+- Approval required for the main branch
 
 ### Tasks to be carried out this week:
 
-| Day | Task | Start Date | Completion Date | Reference Material |
+| No. | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Review the Sprint 2 requirements and analyze Task AWS-005 together with FRONTEND-001 <br> - Study the acceptance criteria and technical documentation for both tasks | 20/07/2026 | 20/07/2026 | |
-| 3 | - Implement Task AWS-005 <br> - Create an ECS cluster using AWS Fargate <br> - Create a task definition for the frontend app <br> - Configure CloudWatch Logs for monitoring | 21/07/2026 | 21/07/2026 | |
-| 4 | - Complete FRONTEND-001 <br> - Set up the development environment for the frontend <br> - Build a Dockerfile and run a local container test <br> - Push the image to Amazon ECR | 22/07/2026 | 22/07/2026 | |
-| 5 | - Continue FRONTEND-001 <br> - Configure environment variables for the frontend <br> - Validate the container behavior in the ECS task definition <br> - Test logging to Amazon CloudWatch | 23/07/2026 | 23/07/2026 | |
-| 6 | - Run overall verification for AWS-005 and FRONTEND-001 <br> - Fix configuration errors and finalize deployment documentation | 24/07/2026 | 24/07/2026 | |
+| 1 | - Receive and analyze Sprint 2 requirements <br> - Study the Acceptance Criteria for CI-001 | 18/07/2026 | 19/07/2026 | <https://aws.amazon.com/ecr/> |
+| 2 | - Create the GitHub Actions workflow file (.github/workflows/deploy.yml) <br> - Configure OIDC authentication (GitHub → AWS) | 18/07/2026 | 19/07/2026 | <https://docs.github.com/en/actions/> |
+| 3 | - Add Docker build step (backend + frontend) <br> - Add push step to ECR <br> - Add unit test step (Django pytest) <br> - Add E2E test step for frontend (Playwright) | 19/07/2026 | 20/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Test the workflow on a feature branch <br> - Set up approval requirements for the main branch <br> - Add a smoke test step after deployment | 19/07/2026 | 20/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Finalize deployment documentation <br> - Prepare for Sprint 3 | 20/07/2026 | 21/07/2026 | |
 
 ### Week 5 Achievements:
 
-- Completed Task AWS-005 and successfully deployed the Amazon ECS cluster with the frontend task definition.
-- Configured CloudWatch Logs to monitor the application container and its runtime behavior.
-- Completed Task FRONTEND-001 by building the frontend Docker image and storing it in Amazon ECR.
-- Verified that the frontend could run inside a container and that the configuration met the Sprint 2 acceptance criteria.
-- Finalized the implementation documentation and prepared the frontend for integration with backend components in later sprints.
+- Completed the deployment and configuration of Task CI-001 according to the Sprint 2 requirements.
+- Gained a clear understanding of the deployment process and AWS resource configuration related to the task.
+- Successfully tested and confirmed that resources operate according to the Acceptance Criteria.
+- Finalized the deployment guide documentation and recorded issues encountered during implementation.
+- Ready to move on to the next sprint tasks after completing CI-001.
