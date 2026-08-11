@@ -239,11 +239,11 @@ Protocol: TCP
 
 12. Kiểm tra lại cấu hình và chọn **Create**.
 
-![alt text](image.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image054.png)
 
-![alt text](image-1.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image055.png)
 
-![alt text](image-2.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image056.png)
 ---
 
 
@@ -365,7 +365,7 @@ Task Execution Role cho phép ECS thực hiện các thao tác cần thiết tro
 NeonFoodmap-ECS-TaskExecution-Role
 ```
 
-![alt text](image-3.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image057.png)
 
 4. Mở Role và chọn tab **Permissions**.
 
@@ -375,11 +375,11 @@ NeonFoodmap-ECS-TaskExecution-Role
 - Ghi Container Logs vào Amazon CloudWatch Logs.
 - Truy cập Secret từ AWS Secrets Manager nếu Task Definition sử dụng Secrets.
 
-![alt text](image-4.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image058.png)
 
 6. Đối với ECR, Role cần có quyền tương ứng để ECS/Fargate xác thực và pull Image từ Repository.
 
-![alt text](image-6.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image060.png)
 
 7. Quay lại **Amazon ECS → Task definitions**.
 
@@ -391,7 +391,7 @@ NeonFoodmap-ECS-TaskExecution-Role
 NeonFoodmap-ECS-TaskExecution-Role
 ```
 
-![alt text](image-7.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image061.png)
 
 10. Thực hiện kiểm tra tương tự với Task Definition của Frontend.
 
@@ -420,4 +420,4 @@ Sau khi các cấu hình trên hoàn tất, hệ thống đã sẵn sàng để 
 ![](/images/5-Workshop/5.4-Neon-Deployment/image040.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image041.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image042.png)
-![alt text](image-8.png)
+![alt text](/images/5-Workshop/5.4-Neon-Deployment/image062.png)
