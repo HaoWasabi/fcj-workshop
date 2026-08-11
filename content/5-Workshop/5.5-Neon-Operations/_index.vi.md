@@ -32,7 +32,8 @@ Quy trình vận hành hệ thống NeonFoodMap gồm các giai đoạn chính:
 4. Thiết lập CloudWatch Dashboard, Logs và Alarms để giám sát hệ thống.
 5. Cấu hình VPC Flow Logs, Cost Monitoring và AWS Budget Alerts.
 6. Thực hiện End-to-End Testing cho các luồng chính như đăng ký, đăng nhập, POI, audio, tour và thanh toán.
-7. Kiểm tra các tình huống lỗi, khả năng Responsive và dọn dẹp tài nguyên khi cần.
+7. Kiểm tra các tình huống lỗi và khả năng Responsive trên Mobile và Desktop.
+8. Dọn dẹp toàn bộ tài nguyên AWS đã tạo trong workshop.
 
 ### Kết luận triển khai
 

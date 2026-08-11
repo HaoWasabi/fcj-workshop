@@ -32,7 +32,8 @@ The NeonFoodMap system operation process consists of the following main stages:
 4. Set up CloudWatch Dashboards, Logs, and Alarms for system monitoring.
 5. Configure VPC Flow Logs, Cost Monitoring, and AWS Budget Alerts.
 6. Perform End-to-End Testing for key flows such as registration, login, POI browsing, audio playback, tour booking, and payment.
-7. Test error scenarios, Responsive behavior, and clean up resources when necessary.
+7. Test error scenarios and Responsive behavior across multiple devices.
+8. Clean up all AWS resources created during the workshop.
 
 
 ### Deployment Conclusion
