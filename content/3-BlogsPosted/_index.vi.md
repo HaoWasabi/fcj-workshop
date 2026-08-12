@@ -14,3 +14,6 @@ Blog này giới thiệu cách tự động bật và tắt Amazon RDS theo lị
 
 ###  [Blog 3 - KIẾN THỨC NỀN TẢNG – BỆ PHÓNG VỮNG CHẮC ĐỂ CHINH PHỤC ĐIỆN TOÁN ĐÁM MÂY](3.3-Blog3/)
 Blog này chia sẻ góc nhìn cá nhân về việc nền tảng kiến ​​thức vững chắc trong các lĩnh vực như Thiết kế hệ thống (System Design), Mạng (Networking), API và Cơ sở dữ liệu đã giúp quá trình học AWS trở nên nhanh chóng và trực quan hơn. 
+
+###  [Blog 4 - MUA SAVINGS PLANS TRƯỚC KHI RIGHTSIZE CÓ THỂ KHIẾN BẠN TỐI ƯU CHI PHÍ SAI THỨ TỰ](3.4-Blog4/)
+Blog này nhấn mạnh tầm quan trọng của việc Rightsize trước khi mua Savings Plans để tránh khóa chi tiêu vào tài nguyên dư thừa. Đồng thời, AWS bổ sung Cost Efficiency widget trong Billing and Cost Management Dashboards giúp đo lường hiệu quả chi phí hằng ngày dựa trên Understanding your cost efficiency metric.
